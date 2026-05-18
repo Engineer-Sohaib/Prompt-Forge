@@ -246,6 +246,11 @@ img {
   align-items: center;
   gap: 5px;
 }
+.hd-actions .right-btns{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .hd-btn {
   display: flex;
   align-items: center;
@@ -6757,6 +6762,9 @@ select,
   }
   .mobile-nav-bar {
     display: flex;
+  }
+  .hd-actions{
+    justify-content: space-between;
   }
   .mob-menu-btn {
     display: flex;
