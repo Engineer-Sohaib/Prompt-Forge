@@ -430,6 +430,12 @@ img {
 .card-body {
   padding: 15px 18px;
 }
+.right-view-btn,
+.view-style{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
 /* ============================================================
    BUTTONS
@@ -1457,6 +1463,9 @@ img {
 .mp-view-btn.active {
   background: var(--s2);
   color: var(--t1);
+}
+.mp-view-btn#mpFilterMobileView{
+  display: none;
 }
 
 /* Shared "clear search" text buttons */
@@ -6714,7 +6723,7 @@ select,
     bottom: 0;
     width: min(460px, 90vw);
     z-index: 800;
-    box-shadow: -4px 0 24px rgba(0,0,0,0.12);
+    box-shadow: var(--sh);
     border-radius: 0;
     border-left: 1px solid var(--bd);
   }
@@ -6774,7 +6783,16 @@ select,
   .mob-menu-btn {
     display: flex;
   }
-
+  
+.mp-view-btn#mpFilterMobileView{
+  display: block;
+}
+.mobile-view-search,.mobile-view-filter{
+  display: none;
+}
+.view-style{
+  justify-content: space-between;
+}
   /* Main gets full width; account for bottom nav */
   .app {
     height: 100dvh;

@@ -1108,4 +1108,48 @@ function _closeMobSidebar(sidebar, overlay) {
 		syncLogoTheme(); // sync logo on page load too
 	}
 
+
+
+	/* ── Mobile Filters View ───────────────────────────────── */
+	const filterBtn = document.getElementById('mpFilterMobileView');
+	const searchWrap = document.querySelector('.mobile-view-search');
+	const filters = document.querySelector('.mobile-view-filter');
+
+	let filtersOpen = false;
+
+	function animateIn(el) {
+	el.style.display = 'flex';
+	el.style.opacity = '0';
+	el.style.transform = 'translateY(-8px)';
+	el.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+	requestAnimationFrame(() => {
+		requestAnimationFrame(() => {
+		el.style.opacity = '1';
+		el.style.transform = 'translateY(0)';
+		});
+	});
+	}
+
+	function animateOut(el) {
+	el.style.opacity = '0';
+	el.style.transform = 'translateY(-8px)';
+	el.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+	el.addEventListener('transitionend', () => {
+		el.style.display = 'none';
+	}, { once: true });
+	}
+
+	filterBtn.addEventListener('click', () => {
+	filtersOpen = !filtersOpen;
+	filterBtn.classList.toggle('active', filtersOpen);
+
+	if (filtersOpen) {
+		animateIn(searchWrap);
+		animateIn(filters);
+	} else {
+		animateOut(searchWrap);
+		animateOut(filters);
+	}
+	});
+
 })();

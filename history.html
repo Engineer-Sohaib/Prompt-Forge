@@ -177,7 +177,7 @@
 
             <!-- Toolbar -->
             <div class="hist-toolbar">
-                <div class="hist-search-wrap">
+                <div class="hist-search-wrap mobile-view-search">
                     <svg class="hist-search-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
                     </svg>
@@ -188,7 +188,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="hist-filters">
+                <div class="hist-filters  mobile-view-filter">
                     <div class="mp-select-wrap">
                         <select class="mp-select" id="histCatFilter">
                             <option value="">All Categories</option>
@@ -222,19 +222,26 @@
                         <svg class="mp-select-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                     </div>
                 </div>
-                <div class="hist-view-btns">
-                    <button class="mp-view-btn active" id="histListViewBtn" title="List view">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
-                            <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
-                        </svg>
-                    </button>
-                    <button class="mp-view-btn" id="histGridViewBtn" title="Grid view">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
-                            <rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>
-                        </svg>
-                    </button>
+                <div class="view-style">
+                    <div class="right-view-btn">
+                        <button class="hd-btn icon-only" id="mpFilterMobileView" title="Filters Mobile view">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 4V6H20L15 13.5V22H9V13.5L4 6H3V4H21ZM6.4037 6L11 12.8944V20H13V12.8944L17.5963 6H6.4037Z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="hist-view-btns">
+                        <button class="mp-view-btn active" id="histListViewBtn" title="List view">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+                                <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+                            </svg>
+                        </button>
+                        <button class="mp-view-btn" id="histGridViewBtn" title="Grid view">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
 
