@@ -6793,6 +6793,16 @@ select,
 .view-style{
   justify-content: space-between;
 }
+.editor-wrap{
+  flex-direction: column;
+}
+.fref-panel{
+  width: 100%;
+}
+#frefLst{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
   /* Main gets full width; account for bottom nav */
   .app {
     height: 100dvh;
@@ -6932,6 +6942,7 @@ select,
   .stg-form-actions {
     flex-direction: column-reverse;
     gap: 8px;
+    padding: 10px;
   }
   .stg-form-actions .btn {
     width: 100%;
@@ -7097,6 +7108,9 @@ select,
   }
 
   /* Settings */
+  #stgViewNotifications{
+    margin: 1rem 0;
+  }
   .stg-grid {
     grid-template-columns: 1fr !important;
   }
