@@ -7972,6 +7972,9 @@ select,
   .content{
     overflow-x: hidden;
   }
+  .mp-content.padding-0{
+    padding: 10px;
+  }
 
   /* Model selector trigger button */
   .mdl-trigger {
