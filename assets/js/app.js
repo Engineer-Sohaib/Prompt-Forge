@@ -141,6 +141,17 @@ const D = {
 /* ============================================================
    MODEL MODULE
    ============================================================ */
+const mdlTrigger   = document.getElementById('mdlTrigger');
+const triggerIcon  = document.getElementById('triggerIcon');
+const triggerName  = document.getElementById('triggerName');
+
+function syncTrigger(m) {
+	if (!mdlTrigger) return;
+	triggerIcon.className = `micon ${m.cls}`;
+	triggerIcon.innerHTML = m.svg;
+	triggerName.textContent = m.name;
+}
+
 function renderMdlDd() {
 	D.mdlDd.innerHTML = MODELS.map(m => `
     <div class="mdl-opt ${m.id === S.model.id ? 'sel' : ''}" data-mdl="${m.id}" role="option">
@@ -157,6 +168,7 @@ function pickModel(id) {
 	const m = MODELS.find(x => x.id === id);
 	if (!m) return;
 	S.model = m;
+	syncTrigger(m);
 	D.sumMdlIc.className = `micon ${m.cls}`;
 	D.sumMdlIc.innerHTML = m.svg;
 	D.sumMdlName.textContent = m.name;
@@ -168,10 +180,26 @@ function pickModel(id) {
 function openMdlDd() {
 	renderMdlDd();
 	D.mdlDd.classList.add('open');
+	if (mdlTrigger) {
+		mdlTrigger.classList.add('open');
+		mdlTrigger.setAttribute('aria-expanded', 'true');
+	}
 }
 
 function closeMdlDd() {
 	D.mdlDd.classList.remove('open');
+	if (mdlTrigger) {
+		mdlTrigger.classList.remove('open');
+		mdlTrigger.setAttribute('aria-expanded', 'false');
+	}
+}
+
+// Wire up trigger button (mobile only — hidden via CSS on desktop)
+if (mdlTrigger) {
+	mdlTrigger.addEventListener('click', e => {
+		e.stopPropagation();
+		D.mdlDd.classList.contains('open') ? closeMdlDd() : openMdlDd();
+	});
 }
 
 /* ============================================================
@@ -906,6 +934,7 @@ document.getElementById('generatePrompt').addEventListener('click', gpGeneratePr
    ============================================================ */
 (function init() {
 	renderMdlDd();
+	syncTrigger(S.model);
 	updateStats();
 	refreshFilePanels();
 	updateCont();

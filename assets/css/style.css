@@ -246,6 +246,11 @@ img {
   align-items: center;
   gap: 5px;
 }
+.hd-actions .right-btns{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .hd-btn {
   display: flex;
   align-items: center;
@@ -486,6 +491,10 @@ img {
    ============================================================ */
 .mdl-wrap {
   position: relative;
+}
+/* Trigger button — hidden on desktop, shown via media query on mobile */
+.mdl-trigger {
+  display: none;
 }
 .micon {
   width: 30px;
@@ -6758,6 +6767,10 @@ select,
   .mobile-nav-bar {
     display: flex;
   }
+  .hd-actions{
+    justify-content: space-between;
+    width: 100%;
+  }
   .mob-menu-btn {
     display: flex;
   }
@@ -7548,7 +7561,7 @@ select,
   }
   .sidebar.mob-sidebar-open {
     transform: translateX(0);
-    box-shadow: 4px 0 24px rgba(0,0,0,0.18);
+    box-shadow: var(--sh);
   }
   /* Restore full sidebar appearance inside drawer */
   .sidebar .logo-txt,
@@ -7941,16 +7954,62 @@ select,
    PROMPT BUILDER — additional responsive fixes
    ============================================================ */
 @media (max-width: 768px) {
-  /* Model selector: full-width trigger, stays as normal dropdown */
+  /* Model selector trigger button */
   .mdl-trigger {
+    display: flex;
     width: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 13px;
+    background: var(--s0);
+    border: 1px solid var(--bd);
+    border-radius: var(--rad);
+    cursor: pointer;
+    font-family: var(--fb);
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--t1);
     justify-content: space-between;
+    transition: border-color var(--tr), background var(--tr);
   }
+  .mdl-trigger:hover {
+    background: var(--s1);
+    border-color: var(--bd2);
+  }
+  .mdl-trigger-left {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  .mdl-trigger-chevron {
+    width: 16px;
+    height: 16px;
+    color: var(--t3);
+    transition: transform var(--tr);
+    flex-shrink: 0;
+  }
+  .mdl-trigger.open .mdl-trigger-chevron {
+    transform: rotate(180deg);
+  }
+  /* Inline dropdown on mobile — hidden until .open, no fixed positioning */
   .mdl-dd {
-    position: absolute;
+    display: none;
+    position: static !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
     grid-template-columns: repeat(2, 1fr);
-    max-height: 60dvh;
-    overflow-y: auto;
+    border-radius: var(--rad);
+    border-bottom: 1px solid var(--bd);
+    max-height: none;
+    overflow-y: visible;
+    padding-bottom: 0;
+    margin-top: 6px;
+    z-index: auto;
+  }
+  .mdl-dd.open {
+    display: grid;
   }
 
   /* Step bar: numbered only */
@@ -8055,11 +8114,11 @@ select,
   }
   .card {
     break-inside: avoid;
-    border: 1px solid #ccc;
+    border: 1px solid var(--t2);
     box-shadow: none;
   }
   body {
-    background: white;
+    background: var(--pri-lt);
     font-size: 12pt;
   }
 }
