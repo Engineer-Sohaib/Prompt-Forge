@@ -76,7 +76,7 @@ function applyTheme() {
 applyTheme();
 
 /* ============================================================
-   BUILDER PAGE — only runs when index.html is loaded
+   BUILDER PAGE — only runs when prompt-builder.html is loaded
    ============================================================ */
 if (document.getElementById('mdlDd')) {
 
@@ -912,6 +912,81 @@ document.getElementById('generatePrompt').addEventListener('click', gpGeneratePr
 })();
 
 } // end builder-page guard
+
+/* ============================================================
+   MOBILE SIDEBAR — Runs on ALL pages
+   Handles the hamburger-menu drawer on screens ≤ 768 px.
+   Functions are global so HTML onclick= attributes can call them.
+   ============================================================ */
+
+/**
+ * Open or close the mobile sidebar drawer.
+ * Called by the .mob-menu-btn button in the header (onclick="toggleMobSidebar()").
+ */
+window.toggleMobSidebar = function () {
+	const sidebar = document.querySelector('.sidebar');
+	const overlay = document.getElementById('mobSidebarOverlay');
+	if (!sidebar) return;
+	const isOpen = sidebar.classList.contains('mob-sidebar-open');
+	if (isOpen) {
+		_closeMobSidebar(sidebar, overlay);
+	} else {
+		sidebar.classList.add('mob-sidebar-open');
+		if (overlay) overlay.classList.add('open');
+		document.body.style.overflow = 'hidden';
+	}
+};
+
+/**
+ * Close the mobile sidebar drawer.
+ * Called by the overlay's onclick= and internally.
+ */
+window.closeMobSidebar = function () {
+	const sidebar = document.querySelector('.sidebar');
+	const overlay = document.getElementById('mobSidebarOverlay');
+	_closeMobSidebar(sidebar, overlay);
+};
+
+/** Internal helper — no DOM query overhead on hot path */
+function _closeMobSidebar(sidebar, overlay) {
+	if (sidebar) sidebar.classList.remove('mob-sidebar-open');
+	if (overlay) overlay.classList.remove('open');
+	document.body.style.overflow = '';
+}
+
+(function initMobileSidebar() {
+	/* Close sidebar when a nav link inside it is tapped */
+	document.addEventListener('click', function (e) {
+		const sidebar = document.querySelector('.sidebar');
+		if (!sidebar || !sidebar.classList.contains('mob-sidebar-open')) return;
+
+		/* If the click target is a nav link (or inside one) inside the sidebar */
+		const link = e.target.closest('.nav-link');
+		if (link && sidebar.contains(link)) {
+			/* Small delay so the navigation has time to register */
+			setTimeout(window.closeMobSidebar, 80);
+		}
+	});
+
+	/* Swipe-left gesture to close sidebar */
+	let _touchStartX = 0;
+	document.addEventListener('touchstart', function (e) {
+		_touchStartX = e.touches[0].clientX;
+	}, { passive: true });
+
+	document.addEventListener('touchend', function (e) {
+		const sidebar = document.querySelector('.sidebar');
+		if (!sidebar || !sidebar.classList.contains('mob-sidebar-open')) return;
+		const dx = e.changedTouches[0].clientX - _touchStartX;
+		/* Swipe left ≥ 60 px closes the drawer */
+		if (dx < -60) window.closeMobSidebar();
+	}, { passive: true });
+
+	/* Close on Escape */
+	document.addEventListener('keydown', function (e) {
+		if (e.key === 'Escape') window.closeMobSidebar();
+	});
+})();
 
 /* ============================================================
    SHARED HEADER — Docs Modal, Info Modal, Avatar Dropdown

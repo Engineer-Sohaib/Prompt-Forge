@@ -25,7 +25,7 @@
          ==================================================== -->
         <aside class="sidebar">
             <div class="sidebar-logo">
-                <a href="index.html">
+                <a href="prompt-builder.html">
                     <div class="logo">
                          <img src="./assets/images/logo-dark.png" id="logoImg" alt="LOGO">
                     </div>
@@ -33,14 +33,14 @@
             </div>
 
             <nav class="sidebar-nav">
-                <button class="nav-link" onclick="window.location='index.html'">
+                <button class="nav-link" onclick="window.location='prompt-builder.html'">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="3" y="3" width="7" height="7" rx="1" />
                         <rect x="14" y="3" width="7" height="7" rx="1" />
                         <rect x="14" y="14" width="7" height="7" rx="1" />
                         <rect x="3" y="14" width="7" height="7" rx="1" />
                     </svg>
-                    <span>New Prompt</span>
+                    <span>Builder</span>
                 </button>
                 <a href="my-prompts.html" class="nav-link">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -115,6 +115,9 @@
                     <p class="mp-subtitle">View and manage your previously used templates.</p>
                 </div>
                 <div class="hd-actions">
+                    <button class="mob-menu-btn" id="mobMenuBtn" onclick="toggleMobSidebar()" title="Menu" aria-label="Open menu">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    </button>
                     <button class="hd-btn" id="hdDocsBtn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -258,7 +261,7 @@
                         </div>
                         <h3 class="hist-empty-title" id="histEmptyTitle">No history yet</h3>
                         <p class="hist-empty-desc" id="histEmptyDesc">Start using templates to see them here.</p>
-                        <button class="btn btn-pri" onclick="window.location='index.html'" id="histEmptyBtn">Browse Templates</button>
+                        <button class="btn btn-pri" onclick="window.location='prompt-builder.html'" id="histEmptyBtn">Browse Templates</button>
                     </div>
                 </div>
 
@@ -484,6 +487,36 @@
     <div class="toast-wrap" id="toasts"></div>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js//history.js"></script>
+
+    <!-- ================================================
+         MOBILE BOTTOM NAV BAR (≤768px)
+         ================================================ -->
+    <nav class="mobile-nav-bar" id="mobileNavBar">
+    <a href="prompt-builder.html" class="mob-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+      <span>Builder</span>
+    </a>
+    <a href="my-prompts.html" class="mob-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      <span>Prompts</span>
+    </a>
+    <a href="favorites.html" class="mob-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <span>Favs</span>
+    </a>
+    <a href="history.html" class="mob-nav-item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="12 8 12 12 14 14"/><circle cx="12" cy="12" r="10"/></svg>
+      <span>History</span>
+    </a>
+    <a href="settings.html" class="mob-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M22 12h-2M4 12H2M18.36 18.36l-1.41-1.41M7.05 7.05L5.64 5.64M12 2v2M12 20v2"/></svg>
+      <span>Settings</span>
+    </a>
+    </nav>
+
+    <!-- Mobile sidebar overlay -->
+    <div class="mob-sidebar-overlay" id="mobSidebarOverlay" onclick="closeMobSidebar()"></div>
+
 </body>
 
 </html>
