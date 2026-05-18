@@ -7999,7 +7999,7 @@ select,
     bottom: auto !important;
     left: auto !important;
     right: auto !important;
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
     border-radius: var(--rad);
     border-bottom: 1px solid var(--bd);
     max-height: none;
@@ -8009,7 +8009,7 @@ select,
     z-index: auto;
   }
   .mdl-dd.open {
-    display: grid;
+    display: flex;
   }
 
   /* Step bar: numbered only */
