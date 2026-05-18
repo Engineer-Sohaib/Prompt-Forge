@@ -76,7 +76,7 @@ function applyTheme() {
 applyTheme();
 
 /* ============================================================
-   BUILDER PAGE — only runs when prompt-builder.html is loaded
+   BUILDER PAGE — only runs when index.html is loaded
    ============================================================ */
 if (document.getElementById('mdlDd')) {
 
