@@ -7965,6 +7965,7 @@ select,
   #stgViewProfile{
     padding: 1rem;
   }
+  .stg-model-list,
   .fr-2{
     grid-template-columns: 1fr;
   }
