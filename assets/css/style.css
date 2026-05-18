@@ -7962,6 +7962,12 @@ select,
   .stg-view{
     padding: 0;
   }
+  #stgViewProfile{
+    padding: 1rem;
+  }
+  .fr-2{
+    grid-template-columns: 1fr;
+  }
   .content{
     overflow-x: hidden;
   }
