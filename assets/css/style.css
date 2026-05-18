@@ -7318,6 +7318,7 @@ select,
   }
   .upn-modal-step {
     padding: 16px 12px 14px;
+    margin-bottom: 5.5rem;
   }
   .upn-modal-inner {
     width: 100%;
@@ -7943,7 +7944,7 @@ select,
   .mp-stats-row {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
-    padding: 12px 14px;
+    padding: 0;
   }
   .mp-stat-card {
     padding: 12px;
@@ -7954,6 +7955,17 @@ select,
    PROMPT BUILDER — additional responsive fixes
    ============================================================ */
 @media (max-width: 768px) {
+  .fav-content,
+  .mp-content {
+    padding: 10px;
+  }
+  .stg-view{
+    padding: 0;
+  }
+  .content{
+    overflow-x: hidden;
+  }
+
   /* Model selector trigger button */
   .mdl-trigger {
     display: flex;
