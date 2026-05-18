@@ -246,11 +246,6 @@ img {
   align-items: center;
   gap: 5px;
 }
-.hd-actions .right-btns{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
 .hd-btn {
   display: flex;
   align-items: center;
@@ -6763,10 +6758,6 @@ select,
   .mobile-nav-bar {
     display: flex;
   }
-  .hd-actions{
-    justify-content: space-between;
-    width: 100%;
-  }
   .mob-menu-btn {
     display: flex;
   }
@@ -7950,24 +7941,16 @@ select,
    PROMPT BUILDER — additional responsive fixes
    ============================================================ */
 @media (max-width: 768px) {
-  /* Model selector: full width */
+  /* Model selector: full-width trigger, stays as normal dropdown */
   .mdl-trigger {
     width: 100%;
     justify-content: space-between;
   }
   .mdl-dd {
-    position: fixed !important;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: auto !important;
-    border-radius: var(--rad-lg) var(--rad-lg) 0 0;
-    z-index: 900;
+    position: absolute;
     grid-template-columns: repeat(2, 1fr);
-    border-bottom: none;
     max-height: 60dvh;
     overflow-y: auto;
-    padding-bottom: env(safe-area-inset-bottom);
   }
 
   /* Step bar: numbered only */
