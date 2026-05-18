@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptForge — Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180"<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- ====================================================
+         LEFT SIDEBAR
+         ==================================================== -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <a href="index.html">
+                    <div class="logo">
+                         <img src="./assets/images/logo-dark.png" id="logoImg" alt="LOGO">
+                    </div>
+                </a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <button class="nav-link" onclick="window.location='index.html'">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="14" width="7" height="7" rx="1" />
+                        <rect x="3" y="14" width="7" height="7" rx="1" />
+                    </svg>
+                    <span>New Prompt</span>
+                </button>
+                <a href="my-prompts.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" y1="13" x2="8" y2="13" />
+                        <line x1="16" y1="17" x2="8" y2="17" />
+                    </svg>
+                    <span>My Prompts</span>
+                </a>
+                <a href="templates.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 6h16M4 10h16M4 14h8" />
+                    </svg>
+                    <span>Templates</span>
+                </a>
+                <a href="favorites.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                    <span>Favorites</span>
+                </a>
+                <a href="history.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="12 8 12 12 14 14" />
+                        <circle cx="12" cy="12" r="10" />
+                    </svg>
+                    <span>History</span>
+                </a>
+                <div class="nav-sep"></div>
+                <a href="settings.html" class="nav-link active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3" />
+                        <path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M22 12h-2M4 12H2M18.36 18.36l-1.41-1.41M7.05 7.05L5.64 5.64M12 2v2M12 20v2" />
+                    </svg>
+                    <span>Settings</span>
+                </a>
+                <a href="help-support.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                    <span>Help &amp; Support</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-foot">
+                <div class="up-card">
+                    <div class="up-card-hd">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10" />
+                        </svg>
+                        Upgrade to Pro
+                    </div>
+                    <p class="up-card-p">Unlock premium templates, advanced features, and more.</p>
+                    <button class="btn-up"><a href="upgrade-now.html">Upgrade Now</a></button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ====================================================
+         MAIN AREA
+         ==================================================== -->
+        <div class="main">
+
+            <!-- Header -->
+            <div class="main-hd">
+                <div style="display:flex;align-items:center;gap:10px;">
+                    <button class="stg-back-btn" id="stgBackBtn" style="display:none;" onclick="stgGoHome()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                            <polyline points="15 18 9 12 15 6" />
+                        </svg>
+                    </button>
+                    <div>
+                        <h1 class="main-title" id="stgPageTitle">Settings</h1>
+                        <p class="mp-subtitle" id="stgPageSubtitle">Manage your preferences and account settings.</p>
+                    </div>
+                </div>
+                <div class="hd-actions">
+                    <button class="hd-btn" id="hdDocsBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                        Docs
+                    </button>
+                    <button class="hd-btn icon-only" id="hdInfoBtn" title="Help">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                            <line x1="12" y1="17" x2="12.01" y2="17" />
+                        </svg>
+                    </button>
+                    <button class="hd-btn icon-only" id="mpThemeBtn" title="Toggle theme">
+                        <svg id="mpMoonSvg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                        </svg>
+                        <svg id="mpSunSvg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" style="display:none">
+                            <circle cx="12" cy="12" r="5" />
+                            <line x1="12" y1="1" x2="12" y2="3" /><line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" /><line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </svg>
+                    </button>
+                    
+                    <div class="hd-avatar-wrap" style="position:relative">
+                        <div class="avatar" id="hdAvatarBtn" title="Profile">U</div>
+                        <div class="hd-avatar-dd" id="hdAvatarDd">
+                            <div class="hd-avatar-profile">
+                                <div class="hd-av-pic">U</div>
+                                <div class="hd-av-info">
+                                    <div class="hd-av-name">User</div>
+                                    <div class="hd-av-email">user@example.com</div>
+                                </div>
+                            </div>
+                            <div class="hd-av-sep"></div>
+                            <a href="settings.html" class="hd-av-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M22 12h-2M4 12H2M18.36 18.36l-1.41-1.41M7.05 7.05L5.64 5.64M12 2v2M12 20v2"/></svg>
+                                Settings
+                            </a>
+                            <a href="upgrade-now.html" class="hd-av-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
+                                Upgrade to Pro
+                            </a>
+                            <div class="hd-av-sep"></div>
+                            <div class="hd-av-item hd-av-item--danger" id="hdSignOutBtn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                                Sign Out
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── SETTINGS BODY ── -->
+            <div class="stg-body" id="stgBody">
+
+                <!-- ==========================================
+                 VIEW: HOME
+                 ========================================== -->
+                <div class="stg-view stg-view--active" id="stgViewHome">
+                    <div class="mp-content">
+
+                        <!-- Account Section -->
+                        <div class="stg-section-label">Account</div>
+                        <p class="stg-section-desc">Manage your profile details and account security.</p>
+                        <div class="card stg-list-card">
+                            <!-- Profile Information -->
+                            <button class="stg-list-item" onclick="stgNavigate('profile')">
+                                <div class="stg-list-ic stg-ic--blue">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                        <circle cx="12" cy="7" r="4" />
+                                    </svg>
+                                </div>
+                                <div class="stg-list-body">
+                                    <span class="stg-list-name">Profile Information</span>
+                                    <span class="stg-list-desc">Update your name, email, and profile picture.</span>
+                                </div>
+                                <svg class="stg-list-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6" />
+                                </svg>
+                            </button>
+                            <!-- Security -->
+                            <button class="stg-list-item" onclick="stgNavigate('password')">
+                                <div class="stg-list-ic stg-ic--orange">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                    </svg>
+                                </div>
+                                <div class="stg-list-body">
+                                    <span class="stg-list-name">Security</span>
+                                    <span class="stg-list-desc">Change your password and manage login sessions.</span>
+                                </div>
+                                <svg class="stg-list-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Preferences Section -->
+                        <div class="stg-section-label" style="margin-top:6px;">Preferences</div>
+                        <p class="stg-section-desc">Customize your experience.</p>
+                        <div class="card stg-list-card">
+                            <!-- General -->
+                            <button class="stg-list-item" onclick="stgNavigate('general')">
+                                <div class="stg-list-ic stg-ic--green">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3" />
+                                        <path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M22 12h-2M4 12H2M18.36 18.36l-1.41-1.41M7.05 7.05L5.64 5.64M12 2v2M12 20v2" />
+                                    </svg>
+                                </div>
+                                <div class="stg-list-body">
+                                    <span class="stg-list-name">General</span>
+                                    <span class="stg-list-desc">Set your language, time zone, and theme.</span>
+                                </div>
+                                <svg class="stg-list-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6" />
+                                </svg>
+                            </button>
+                            
+                            <!-- Default Model -->
+                            <button class="stg-list-item" onclick="stgNavigate('model')">
+                                <div class="stg-list-ic stg-ic--purple">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10" />
+                                    </svg>
+                                </div>
+                                <div class="stg-list-body">
+                                    <span class="stg-list-name">Default Model</span>
+                                    <span class="stg-list-desc">Choose the default AI model for prompt generation.</span>
+                                </div>
+                                <svg class="stg-list-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6" />
+                                </svg>
+                            </button>
+                            
+                            <!-- Notifications -->
+                            <button class="stg-list-item" onclick="stgNavigate('notifications')">
+                                <div class="stg-list-ic stg-ic--yellow">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                                        <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                                    </svg>
+                                </div>
+                                <div class="stg-list-body">
+                                    <span class="stg-list-name">Notifications</span>
+                                    <span class="stg-list-desc">Manage email and in-app notifications.</span>
+                                </div>
+                                <svg class="stg-list-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Data & Privacy Section -->
+                        <div class="stg-section-label" style="margin-top:6px;">Data &amp; Privacy</div>
+                        <p class="stg-section-desc">Manage your data and privacy settings.</p>
+                        <div class="card stg-list-card">
+                            <!-- Data Management -->
+                            <button class="stg-list-item" onclick="stgNavigate('data')">
+                                <div class="stg-list-ic stg-ic--teal">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                                    </svg>
+                                </div>
+                                <div class="stg-list-body">
+                                    <span class="stg-list-name">Data Management</span>
+                                    <span class="stg-list-desc">Export or delete your data.</span>
+                                </div>
+                                <svg class="stg-list-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6" />
+                                </svg>
+                            </button>
+                            
+                            <!-- Privacy Policy -->
+                            <button class="stg-list-item" onclick="stgNavigate('privacy')">
+                                <div class="stg-list-ic stg-ic--gray">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    </svg>
+                                </div>
+                                <div class="stg-list-body">
+                                    <span class="stg-list-name">Privacy Policy</span>
+                                    <span class="stg-list-desc">View our privacy policy and terms.</span>
+                                </div>
+                                <svg class="stg-list-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div><!-- /mp-content -->
+                </div><!-- /stgViewHome -->
+
+
+                <!-- ==========================================
+                 VIEW: PROFILE INFORMATION
+                 ========================================== -->
+                <div class="stg-view" id="stgViewProfile">
+                    <div class="mp-content grid fr-2 padding-0">
+                        <div class="card">
+                            <div class="card-hd">
+                                <div class="card-title">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                        <circle cx="12" cy="7" r="4" />
+                                    </svg>
+                                    Profile Picture
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="stg-avatar-row">
+                                    <div class="stg-avatar-lg" id="stgProfileAvatarPreview">EJ</div>
+                                    <div class="stg-avatar-actions">
+                                        <button class="btn btn-sec stg-photo-btn" onclick="document.getElementById('stgPhotoInput').click()">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                                                <circle cx="12" cy="13" r="4" />
+                                            </svg>
+                                            Change Photo
+                                        </button>
+                                        <input type="file" id="stgPhotoInput" accept="image/*" style="display:none" onchange="stgHandlePhoto(this)">
+                                        <p class="stg-photo-hint">JPG, PNG up to 2MB</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-hd">
+                                <div class="card-title">Personal Details</div>
+                            </div>
+                            <div class="card-body stg-form">
+                                <div class="stg-field">
+                                    <label class="stg-label">Full Name</label>
+                                    <input type="text" class="stg-input" id="stgFullName" value="Emma Johnson" placeholder="Your full name">
+                                </div>
+                                <div class="stg-field">
+                                    <label class="stg-label">Email Address</label>
+                                    <input type="email" class="stg-input" id="stgEmail" value="emma.johnson@example.com" placeholder="your@email.com">
+                                </div>
+                                <div class="stg-field">
+                                    <label class="stg-label">Bio <span class="opt-tag">(Optional)</span></label>
+                                    <textarea class="stg-textarea" id="stgBio" placeholder="Tell us a little about yourself…" rows="3">Prompt engineer and AI enthusiast.</textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="stg-form-actions mt-1">
+                        <button class="btn btn-sec" onclick="stgGoHome()">Cancel</button>
+                        <button class="btn btn-pri" onclick="stgSaveProfile()">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Save Changes
+                        </button>
+                    </div>
+                </div><!-- /stgViewProfile -->
+
+
+                <!-- ==========================================
+                 VIEW: CHANGE PASSWORD
+                 ========================================== -->
+                <div class="stg-view" id="stgViewPassword">
+                    <div class="mp-content">
+                        <div class="card">
+                            <div class="card-hd">
+                                <div class="card-title">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                    </svg>
+                                    Change Password
+                                </div>
+                                <p class="card-sub">Update your password to keep your account secure.</p>
+                            </div>
+                            <div class="card-body stg-form">
+                                <div class="stg-field">
+                                    <label class="stg-label">Current Password</label>
+                                    <div class="stg-pw-wrap">
+                                        <input type="password" class="stg-input" id="stgCurPw" placeholder="Enter current password">
+                                        <button class="stg-pw-eye" type="button" onclick="stgTogglePw('stgCurPw',this)">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="grid fr-2 gap-5">
+                                    <div class="stg-field">
+                                        <label class="stg-label">New Password</label>
+                                        <div class="stg-pw-wrap">
+                                            <input type="password" class="stg-input" id="stgNewPw" placeholder="Enter new password" oninput="stgCheckStrength(this.value)">
+                                            <button class="stg-pw-eye" type="button" onclick="stgTogglePw('stgNewPw',this)">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                                            </button>
+                                        </div>
+                                        <!-- Strength bar -->
+                                        <div class="stg-strength-bar">
+                                            <div class="stg-strength-fill" id="stgStrengthFill"></div>
+                                        </div>
+                                        <span class="stg-strength-lbl" id="stgStrengthLbl"></span>
+                                    </div>
+                                    <div class="stg-field">
+                                        <label class="stg-label">Confirm New Password</label>
+                                        <div class="stg-pw-wrap">
+                                            <input type="password" class="stg-input" id="stgConfPw" placeholder="Confirm new password">
+                                            <button class="stg-pw-eye" type="button" onclick="stgTogglePw('stgConfPw',this)">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Requirements -->
+                                <div class="stg-pw-reqs">
+                                    <p class="stg-pw-reqs-title">Password must include:</p>
+                                    <ul class="stg-req-list">
+                                        <li class="stg-req" id="req-len">At least 8 characters</li>
+                                        <li class="stg-req" id="req-upper">One uppercase letter</li>
+                                        <li class="stg-req" id="req-num">One number</li>
+                                        <li class="stg-req" id="req-special">One special character</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stg-form-actions">
+                            <button class="btn btn-sec" onclick="stgGoHome()">Cancel</button>
+                            <button class="btn btn-pri" onclick="stgSavePassword()">Update Password</button>
+                        </div>
+                    </div>
+                </div><!-- /stgViewPassword -->
+
+
+                <!-- ==========================================
+                 VIEW: GENERAL PREFERENCES
+                 ========================================== -->
+                <div class="stg-view" id="stgViewGeneral">
+                    <div class="mp-content">
+                        <div class="card">
+                            <div class="card-hd">
+                                <div class="card-title">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                        <circle cx="12" cy="12" r="3" /><path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M22 12h-2M4 12H2M18.36 18.36l-1.41-1.41M7.05 7.05L5.64 5.64M12 2v2M12 20v2" />
+                                    </svg>
+                                    General Preferences
+                                </div>
+                                <p class="card-sub">Customize your general preferences.</p>
+                            </div>
+                            <div class="card-body stg-form">
+                                <div class="grid fr-2 gap-5">
+                                    <!-- Language -->
+                                    <div class="stg-field">
+                                        <label class="stg-label">Language</label>
+                                        <div class="mp-select-wrap" style="width:100%">
+                                            <select class="mp-select stg-input" id="stgLanguage" style="height:36px">
+                                                <option value="en" selected>English</option>
+                                                <option value="es">Spanish</option>
+                                                <option value="fr">French</option>
+                                                <option value="de">German</option>
+                                                <option value="zh">Chinese</option>
+                                                <option value="ar">Arabic</option>
+                                                <option value="ur">Urdu</option>
+                                            </select>
+                                            <svg class="mp-select-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                                        </div>
+                                    </div>
+                                    <!-- Time Zone -->
+                                    <div class="stg-field">
+                                        <label class="stg-label">Time Zone</label>
+                                        <div class="mp-select-wrap" style="width:100%">
+                                            <select class="mp-select stg-input" id="stgTimezone" style="height:36px">
+                                                <option value="UTC-5">(GMT-05:00) Eastern Time</option>
+                                                <option value="UTC-6">(GMT-06:00) Central Time</option>
+                                                <option value="UTC-7">(GMT-07:00) Mountain Time</option>
+                                                <option value="UTC-8">(GMT-08:00) Pacific Time</option>
+                                                <option value="UTC+0">(GMT+00:00) UTC</option>
+                                                <option value="UTC+1">(GMT+01:00) London</option>
+                                                <option value="UTC+5:30" selected>(GMT+05:30) Asia/Kolkata</option>
+                                            </select>
+                                            <svg class="mp-select-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Theme -->
+                                <div class="stg-field">
+                                    <label class="stg-label">Theme</label>
+                                    <div class="stg-theme-opts">
+                                        <label class="stg-theme-opt" id="themeOptLight">
+                                            <input type="radio" name="stgTheme" value="light" checked onchange="stgSetTheme('light')">
+                                            <span class="stg-theme-preview stg-theme-preview--light">
+                                                <span class="stg-theme-dot"></span>
+                                            </span>
+                                            <span class="stg-theme-lbl">Light</span>
+                                        </label>
+                                        <label class="stg-theme-opt" id="themeOptDark">
+                                            <input type="radio" name="stgTheme" value="dark" onchange="stgSetTheme('dark')">
+                                            <span class="stg-theme-preview stg-theme-preview--dark">
+                                                <span class="stg-theme-dot"></span>
+                                            </span>
+                                            <span class="stg-theme-lbl">Dark</span>
+                                        </label>
+                                        <label class="stg-theme-opt" id="themeOptSystem">
+                                            <input type="radio" name="stgTheme" value="system" onchange="stgSetTheme('system')">
+                                            <span class="stg-theme-preview stg-theme-preview--system">
+                                                <span class="stg-theme-dot"></span>
+                                            </span>
+                                            <span class="stg-theme-lbl">System</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="grid fr-2 gap-5">
+                                    <!-- Date Format -->
+                                    <div class="stg-field">
+                                        <label class="stg-label">Date Format</label>
+                                        <div class="mp-select-wrap" style="width:100%">
+                                            <select class="mp-select stg-input" id="stgDateFormat" style="height:36px">
+                                                <option value="dd-mmm-yyyy" selected>DD MMM, YYYY (20 May, 2024)</option>
+                                                <option value="mm-dd-yyyy">MM/DD/YYYY</option>
+                                                <option value="dd-mm-yyyy">DD/MM/YYYY</option>
+                                                <option value="yyyy-mm-dd">YYYY-MM-DD</option>
+                                            </select>
+                                            <svg class="mp-select-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                                        </div>
+                                    </div>
+                                    <!-- Default Prompt View -->
+                                    <div class="stg-field">
+                                        <label class="stg-label">Default Prompt View</label>
+                                        <div class="mp-select-wrap" style="width:100%">
+                                            <select class="mp-select stg-input" id="stgPromptView" style="height:36px">
+                                                <option value="cards" selected>Cards View</option>
+                                                <option value="list">List View</option>
+                                                <option value="compact">Compact View</option>
+                                            </select>
+                                            <svg class="mp-select-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stg-form-actions">
+                            <button class="btn btn-sec" onclick="stgGoHome()">Cancel</button>
+                            <button class="btn btn-pri" onclick="stgSavePreferences()">Save Preferences</button>
+                        </div>
+                    </div>
+                </div><!-- /stgViewGeneral -->
+
+
+                <!-- ==========================================
+                 VIEW: DEFAULT MODEL
+                 ========================================== -->
+                <div class="stg-view" id="stgViewModel">
+                    <div class="mp-content">
+                        <div class="card">
+                            <div class="card-hd">
+                                <div class="card-title">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10" />
+                                    </svg>
+                                    Default AI Model
+                                </div>
+                                <p class="card-sub">Choose the AI model used by default when building prompts.</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="stg-model-list" id="stgModelList">
+                                    <!-- Rendered by JS -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stg-form-actions">
+                            <button class="btn btn-sec" onclick="stgGoHome()">Cancel</button>
+                            <button class="btn btn-pri" onclick="stgSaveModel()">Save Model</button>
+                        </div>
+                    </div>
+                </div><!-- /stgViewModel -->
+
+
+                <!-- ==========================================
+                 VIEW: NOTIFICATIONS
+                 ========================================== -->
+                <div class="stg-view" id="stgViewNotifications">
+                    <div class="mp-content grid fr-2 padding-0">
+                        <!-- Email Notifications -->
+                        <div class="card">
+                            <div class="card-hd">
+                                <div class="card-title">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                    Email Notifications
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="stg-notif-row">
+                                    <div class="stg-notif-body">
+                                        <span class="stg-notif-name">Product updates and announcements</span>
+                                    </div>
+                                    <label class="stg-toggle">
+                                        <input type="checkbox" id="notifProdUpdates" checked>
+                                        <span class="stg-toggle-track"><span class="stg-toggle-thumb"></span></span>
+                                    </label>
+                                </div>
+                                
+                                <div class="stg-notif-row">
+                                    <div class="stg-notif-body">
+                                        <span class="stg-notif-name">New features and tips</span>
+                                    </div>
+                                    <label class="stg-toggle">
+                                        <input type="checkbox" id="notifFeatures" checked>
+                                        <span class="stg-toggle-track"><span class="stg-toggle-thumb"></span></span>
+                                    </label>
+                                </div>
+                                
+                                <div class="stg-notif-row">
+                                    <div class="stg-notif-body">
+                                        <span class="stg-notif-name">Weekly summary</span>
+                                    </div>
+                                    <label class="stg-toggle">
+                                        <input type="checkbox" id="notifWeekly">
+                                        <span class="stg-toggle-track"><span class="stg-toggle-thumb"></span></span>
+                                    </label>
+                                </div>
+                                
+                                <div class="stg-notif-row">
+                                    <div class="stg-notif-body">
+                                        <span class="stg-notif-name">Marketing emails</span>
+                                    </div>
+                                    <label class="stg-toggle">
+                                        <input type="checkbox" id="notifMarketing">
+                                        <span class="stg-toggle-track"><span class="stg-toggle-thumb"></span></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- In-app Notifications -->
+                        <div class="card">
+                            <div class="card-hd">
+                                <div class="card-title">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" /><path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                                    </svg>
+                                    In-app Notifications
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="stg-notif-row">
+                                    <div class="stg-notif-body">
+                                        <span class="stg-notif-name">Prompt generation completed</span>
+                                    </div>
+                                    <label class="stg-toggle">
+                                        <input type="checkbox" id="notifPromptDone" checked>
+                                        <span class="stg-toggle-track"><span class="stg-toggle-thumb"></span></span>
+                                    </label>
+                                </div>
+                                
+                                <div class="stg-notif-row">
+                                    <div class="stg-notif-body">
+                                        <span class="stg-notif-name">Template recommendations</span>
+                                    </div>
+                                    <label class="stg-toggle">
+                                        <input type="checkbox" id="notifTplRec" checked>
+                                        <span class="stg-toggle-track"><span class="stg-toggle-thumb"></span></span>
+                                    </label>
+                                </div>
+                                
+                                <div class="stg-notif-row">
+                                    <div class="stg-notif-body">
+                                        <span class="stg-notif-name">Comments and mentions</span>
+                                    </div>
+                                    <label class="stg-toggle">
+                                        <input type="checkbox" id="notifMentions" checked>
+                                        <span class="stg-toggle-track"><span class="stg-toggle-thumb"></span></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notification Frequency -->
+                        <div class="card">
+                            <div class="card-hd">
+                                <div class="card-title">Notification Frequency</div>
+                            </div>
+                            <div class="card-body stg-form">
+                                <label class="stg-radio-row">
+                                    <input type="radio" name="notifFreq" value="instant" checked>
+                                    <span class="stg-radio-body">
+                                        <span class="stg-radio-name">Instant</span>
+                                        <span class="stg-radio-desc">Get notified instantly.</span>
+                                    </span>
+                                </label>
+                                <label class="stg-radio-row">
+                                    <input type="radio" name="notifFreq" value="digest">
+                                    <span class="stg-radio-body">
+                                        <span class="stg-radio-name">Digest</span>
+                                        <span class="stg-radio-desc">Get a summary once a day.</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                            <div class="stg-form-actions">
+                                <button class="btn btn-sec" onclick="stgGoHome()">Cancel</button>
+                                <button class="btn btn-pri" onclick="stgSaveNotifications()">Save Settings</button>
+                            </div>
+                </div><!-- /stgViewNotifications -->
+
+
+                <!-- ==========================================
+                 VIEW: DATA MANAGEMENT
+                 ========================================== -->
+                <div class="stg-view" id="stgViewData">
+                    <div class="mp-content">
+                        <!-- Export Data -->
+                        <div class="card">
+                            <div class="card-hd">
+                                <div class="card-title">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" />
+                                    </svg>
+                                    Export Data
+                                </div>
+                                <p class="card-sub">Download a copy of data including prompts, templates, and settings.</p>
+                            </div>
+                            <div class="card-body">
+                                <button class="btn btn-sec" onclick="stgExportData()">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" />
+                                    </svg>
+                                    Export Data
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Delete Account -->
+                        <div class="card stg-danger-card">
+                            <div class="card-hd">
+                                <div class="card-title" style="color:var(--err)">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                        <polyline points="3 6 5 6 21 6" /><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" /><path d="M10 11v6" /><path d="M14 11v6" /><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" />
+                                    </svg>
+                                    Delete Account
+                                </div>
+                                <p class="card-sub">Once you delete your account, there is no going back. Please be certain.</p>
+                            </div>
+                            <div class="card-body">
+                                <button class="btn btn-red" onclick="stgOpenDeleteModal()">Delete Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /stgViewData -->
+
+
+                <!-- ==========================================
+                 VIEW: PRIVACY POLICY
+                 ========================================== -->
+                <div class="stg-view" id="stgViewPrivacy">
+                    <div class="mp-content">
+                        <div class="card">
+                            <div class="card-hd">
+                                <div class="card-title">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    </svg>
+                                    Privacy Policy
+                                </div>
+                                <p class="card-sub">Last updated: May 2024</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="stg-privacy-body">
+                                    <h3>1. Information We Collect</h3>
+                                    <p>We collect information you provide directly to us when you create an account, use our services, or communicate with us. This includes your name, email address, and any prompt content you create.</p>
+                                    <h3>2. How We Use Your Information</h3>
+                                    <p>We use the information we collect to operate, maintain, and improve our services, process transactions, send notifications, and respond to your inquiries.</p>
+                                    <h3>3. Information Sharing</h3>
+                                    <p>We do not sell or rent your personal information to third parties. We may share your information with service providers who assist us in operating our platform.</p>
+                                    <h3>4. Data Security</h3>
+                                    <p>We take reasonable measures to help protect your personal information from loss, theft, misuse, unauthorized access, disclosure, alteration, and destruction.</p>
+                                    <h3>5. Your Rights</h3>
+                                    <p>You may update, correct, or delete your account information at any time by logging into your account settings. You may also request a copy of your data.</p>
+                                    <h3>6. Contact Us</h3>
+                                    <p>If you have questions about this privacy policy, please contact us at privacy@promptbuilder.io</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stg-form-actions">
+                            <button class="btn btn-sec" onclick="stgGoHome()">Back to Settings</button>
+                        </div>
+                    </div>
+                </div><!-- /stgViewPrivacy -->
+
+            </div><!-- /stg-body -->
+        </div><!-- /main -->
+    </div><!-- /app -->
+
+
+    <!-- ====================================================
+     DELETE ACCOUNT MODAL
+     ==================================================== -->
+    <div class="modal-ov" id="stgDeleteModal">
+        <div class="modal" style="max-width:380px; text-align:left; padding:24px;">
+            <button class="fav-modal-close" id="stgDeleteClose" onclick="stgCloseDeleteModal()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <div class="modal-ic" style="margin:0 auto 16px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="3 6 5 6 21 6" /><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" /><path d="M10 11v6" /><path d="M14 11v6" />
+                </svg>
+            </div>
+            <h2 class="modal-title" style="text-align:center;">Delete Account?</h2>
+            <p class="modal-desc" style="text-align:center;">Are you sure you want to delete your account? This action cannot be undone.</p>
+            <div class="stg-field" style="margin-bottom:16px;">
+                <label class="stg-label">Type <strong>"DELETE"</strong> to confirm</label>
+                <input type="text" class="stg-input" id="stgDeleteConfirm" placeholder="DELETE" oninput="stgCheckDeleteConfirm()">
+            </div>
+            <div class="modal-acts">
+                <button class="btn btn-sec" onclick="stgCloseDeleteModal()">Cancel</button>
+                <button class="btn btn-red" id="stgDeleteBtn" disabled onclick="stgConfirmDelete()">Delete Account</button>
+            </div>
+        </div>
+    </div>
+    <!-- DOCS MODAL -->
+    <div class="hd-modal-ov" id="hdDocsModal">
+        <div class="hd-modal">
+            <div class="hd-modal-hd">
+                <div class="hd-modal-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    Documentation
+                </div>
+                <button class="hd-modal-close" id="hdDocsClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="hd-modal-body">
+                <div class="hd-doc-section">
+                    <div class="hd-doc-section-title">Getting Started</div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Quick Start Guide</div>
+                            <div class="hd-doc-item-desc">Learn how to build your first AI prompt in under 5 minutes.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Prompt Builder Overview</div>
+                            <div class="hd-doc-item-desc">Understand each section of the builder: model, files, prompt, and export.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hd-doc-section">
+                    <div class="hd-doc-section-title">Features</div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V4h16v3"/><path d="M5 20h6"/><path d="M13 4l-4 16"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Variables & Placeholders</div>
+                            <div class="hd-doc-item-desc">Use <code>{{ROLE}}</code>, <code>{{TASK}}</code>, and other variables to make reusable prompts.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">File Uploads</div>
+                            <div class="hd-doc-item-desc">Attach PDFs, images, or text files as context for your prompt. Up to 10 files, 20MB each.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Export Options</div>
+                            <div class="hd-doc-item-desc">Export your prompts as plain text, Markdown, or JSON for use in any AI tool.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.4 21H14.2L12.2 16H5.8L3.8 21H1.6L8 5H10L16.4 21Z"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">AI Generate Prompt</div>
+                            <div class="hd-doc-item-desc">Write a rough idea, then click "Generate Prompt" to let AI expand it into a complete, structured prompt.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hd-doc-section">
+                    <div class="hd-doc-section-title">Tips & Best Practices</div>
+                    <div class="hd-doc-tip">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Be specific about the <strong>role</strong> (e.g. "You are a senior software engineer") for better results.
+                    </div>
+                    <div class="hd-doc-tip">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Always define the expected <strong>output format</strong> (list, JSON, paragraph, etc.).
+                    </div>
+                    <div class="hd-doc-tip">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Upload a file to give the AI <strong>context</strong> without repeating it in every prompt.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFO MODAL -->
+    <div class="hd-modal-ov" id="hdInfoModal">
+        <div class="hd-modal hd-modal--sm">
+            <div class="hd-modal-hd">
+                <div class="hd-modal-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    About PromptBuilder
+                </div>
+                <button class="hd-modal-close" id="hdInfoClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="hd-modal-body">
+                <div class="hd-info-hero">
+                    <div class="hd-info-logo">PF</div>
+                    <div class="hd-info-name">PromptForge</div>
+                    <div class="hd-info-ver">Version 1.0.0</div>
+                </div>
+                <p class="hd-info-desc">PromptForge helps you build, save, and manage AI prompts for any model — Claude, ChatGPT, Gemini, and more. Craft perfect prompts with variables, file context, and smart templates.</p>
+                <div class="hd-info-stats">
+                    <div class="hd-info-stat">
+                        <div class="hd-info-stat-num">6+</div>
+                        <div class="hd-info-stat-lbl">AI Models</div>
+                    </div>
+                    <div class="hd-info-stat">
+                        <div class="hd-info-stat-num">50+</div>
+                        <div class="hd-info-stat-lbl">Templates</div>
+                    </div>
+                    <div class="hd-info-stat">
+                        <div class="hd-info-stat-num">∞</div>
+                        <div class="hd-info-stat-lbl">Prompts (Pro)</div>
+                    </div>
+                </div>
+                <div class="hd-info-links">
+                    <a href="help-support.html" class="hd-info-link">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        Help &amp; Support
+                    </a>
+                    <a href="upgrade-now.html" class="hd-info-link hd-info-link--pri">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
+                        Upgrade to Pro
+                    </a>
+                </div>
+                <div class="hd-info-copy">© 2025 PromptForge. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div class="toast-wrap" id="toasts"></div>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/settings.js"></script>
+</body>
+
+</html>

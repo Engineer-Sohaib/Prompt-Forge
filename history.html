@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptForge — History</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180"<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- ====================================================
+         LEFT SIDEBAR
+         ==================================================== -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <a href="index.html">
+                    <div class="logo">
+                         <img src="./assets/images/logo-dark.png" id="logoImg" alt="LOGO">
+                    </div>
+                </a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <button class="nav-link" onclick="window.location='index.html'">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="14" width="7" height="7" rx="1" />
+                        <rect x="3" y="14" width="7" height="7" rx="1" />
+                    </svg>
+                    <span>New Prompt</span>
+                </button>
+                <a href="my-prompts.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" y1="13" x2="8" y2="13" />
+                        <line x1="16" y1="17" x2="8" y2="17" />
+                    </svg>
+                    <span>My Prompts</span>
+                </a>
+                <a href="templates.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 6h16M4 10h16M4 14h8" />
+                    </svg>
+                    <span>Templates</span>
+                </a>
+                <a href="favorites.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                    <span>Favorites</span>
+                </a>
+                
+                <a href="history.html" class="nav-link active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="12 8 12 12 14 14" />
+                        <circle cx="12" cy="12" r="10" />
+                    </svg>
+                    <span>History</span>
+                </a >
+                <div class="nav-sep"></div>
+                <a href="settings.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3" />
+                        <path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M22 12h-2M4 12H2M18.36 18.36l-1.41-1.41M7.05 7.05L5.64 5.64M12 2v2M12 20v2" />
+                    </svg>
+                    <span>Settings</span>
+                </a>
+                <a href="help-support.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                    <span>Help &amp; Support</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-foot">
+                <div class="up-card">
+                    <div class="up-card-hd">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10" />
+                        </svg>
+                        Upgrade to Pro
+                    </div>
+                    <p class="up-card-p">Unlock premium templates, advanced features, and more.</p>
+                    <button class="btn-up"><a href="upgrade-now.html">Upgrade Now</a></button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ====================================================
+         MAIN AREA
+         ==================================================== -->
+        <div class="main">
+
+            <!-- Header -->
+            <div class="main-hd">
+                <div>
+                    <h1 class="main-title">History</h1>
+                    <p class="mp-subtitle">View and manage your previously used templates.</p>
+                </div>
+                <div class="hd-actions">
+                    <button class="hd-btn" id="hdDocsBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                        Docs
+                    </button>
+                    <button class="hd-btn icon-only" id="hdInfoBtn" title="Help">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                            <line x1="12" y1="17" x2="12.01" y2="17" />
+                        </svg>
+                    </button>
+                    <button class="hd-btn icon-only" id="mpThemeBtn" title="Toggle theme">
+                        <svg id="mpMoonSvg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                        </svg>
+                        <svg id="mpSunSvg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" style="display:none">
+                            <circle cx="12" cy="12" r="5" />
+                            <line x1="12" y1="1" x2="12" y2="3" /><line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" /><line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </svg>
+                    </button>
+                    <div class="hd-avatar-wrap" style="position:relative">
+                        <div class="avatar" id="hdAvatarBtn" title="Profile">U</div>
+                        <div class="hd-avatar-dd" id="hdAvatarDd">
+                            <div class="hd-avatar-profile">
+                                <div class="hd-av-pic">U</div>
+                                <div class="hd-av-info">
+                                    <div class="hd-av-name">User</div>
+                                    <div class="hd-av-email">user@example.com</div>
+                                </div>
+                            </div>
+                            <div class="hd-av-sep"></div>
+                            <a href="settings.html" class="hd-av-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M22 12h-2M4 12H2M18.36 18.36l-1.41-1.41M7.05 7.05L5.64 5.64M12 2v2M12 20v2"/></svg>
+                                Settings
+                            </a>
+                            <a href="upgrade-now.html" class="hd-av-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
+                                Upgrade to Pro
+                            </a>
+                            <div class="hd-av-sep"></div>
+                            <div class="hd-av-item hd-av-item--danger" id="hdSignOutBtn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                                Sign Out
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Toolbar -->
+            <div class="hist-toolbar">
+                <div class="hist-search-wrap">
+                    <svg class="hist-search-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                    <input type="text" class="hist-search" id="histSearch" placeholder="Search history by template name, use case, or keyword..." />
+                    <button class="hist-search-clear" id="histSearchClear" style="display:none">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                            <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hist-filters">
+                    <div class="mp-select-wrap">
+                        <select class="mp-select" id="histCatFilter">
+                            <option value="">All Categories</option>
+                            <option value="Market Analysis">Market Analysis</option>
+                            <option value="Content Creation">Content Creation</option>
+                            <option value="Business Strategy">Business Strategy</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Competitive Research">Competitive Research</option>
+                            <option value="Data Analysis">Data Analysis</option>
+                        </select>
+                        <svg class="mp-select-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="mp-select-wrap">
+                        <select class="mp-select" id="histModelFilter">
+                            <option value="">All Models</option>
+                            <option value="claude">Claude</option>
+                            <option value="chatgpt">ChatGPT</option>
+                            <option value="gemini">Gemini</option>
+                            <option value="llama">Llama</option>
+                            <option value="mistral">Mistral</option>
+                        </select>
+                        <svg class="mp-select-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="mp-select-wrap">
+                        <select class="mp-select" id="histSort">
+                            <option value="recent">Sort by: Recent</option>
+                            <option value="oldest">Sort by: Oldest</option>
+                            <option value="name">Sort by: Name</option>
+                        </select>
+                        <svg class="mp-select-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                </div>
+                <div class="hist-view-btns">
+                    <button class="mp-view-btn active" id="histListViewBtn" title="List view">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+                            <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+                        </svg>
+                    </button>
+                    <button class="mp-view-btn" id="histGridViewBtn" title="Grid view">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+                            <rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Search result info bar -->
+            <div class="hist-result-bar" id="histResultBar" style="display:none">
+                <span id="histResultCount">2 results found</span>
+                <button class="hist-clear-search" id="histClearSearch">Clear search</button>
+            </div>
+
+            <!-- Content -->
+            <div class="hist-content" id="histContent">
+
+                <!-- History List -->
+                <div class="hist-list-pane">
+                    <div class="hist-list" id="histList">
+                        <!-- rendered by JS -->
+                    </div>
+
+                    <!-- Empty State -->
+                    <div class="hist-empty" id="histEmpty" style="display:none">
+                        <div class="hist-empty-ic">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="12 8 12 12 14 14" />
+                                <circle cx="12" cy="12" r="10" />
+                            </svg>
+                        </div>
+                        <h3 class="hist-empty-title" id="histEmptyTitle">No history yet</h3>
+                        <p class="hist-empty-desc" id="histEmptyDesc">Start using templates to see them here.</p>
+                        <button class="btn btn-pri" onclick="window.location='index.html'" id="histEmptyBtn">Browse Templates</button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /hist-content -->
+
+        </div>
+        <!-- /main -->
+    </div>
+    <!-- /app -->
+
+    <!-- DETAIL DRAWER / MODAL -->
+    <div class="hist-detail-ov" id="histDetailOv">
+        <div class="hist-detail-panel" id="histDetailPanel">
+            <div class="hist-dp-hd">
+                <div class="hist-dp-hd-left">
+                    <div class="hist-dp-icon" id="histDpIcon"><i class="" id="iconGet"></i></div>
+                    <div>
+                        <div class="hist-dp-name" id="histDpName">Template Name</div>
+                        <div class="hist-dp-meta">
+                            <span class="hist-dp-model" id="histDpModel"></span>
+                            <span class="hist-dp-cat" id="histDpCat"></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="mp-dh-close" id="histDpClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                        <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hist-dp-body">
+                <div class="mp-dsec">
+                    <div class="mp-dsec-lbl">Description</div>
+                    <p class="mp-desc-text" id="histDpDesc"></p>
+                </div>
+                <div class="mp-dsec">
+                    <div class="mp-dsec-lbl">Used</div>
+                    <div class="hist-dp-used" id="histDpUsed"></div>
+                </div>
+                <div class="mp-dsec">
+                    <div class="mp-dsec-lbl">Model Used</div>
+                    <div class="hist-dp-model-row" id="histDpModelRow"></div>
+                </div>
+                <div class="mp-dsec">
+                    <div class="mp-dsec-lbl">Variables</div>
+                    <div class="hist-dp-vars" id="histDpVars"></div>
+                </div>
+            </div>
+
+            <div class="hist-dp-foot">
+                <button class="btn btn-sec hist-dp-delete" id="histDpDelete">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13">
+                        <polyline points="3 6 5 6 21 6"/>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>
+                    </svg>
+                    Delete from History
+                </button>
+                <button class="btn btn-pri" id="histDpUse">Use Template</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- REMOVE CONFIRM MODAL -->
+    <div class="modal-ov" id="histRemoveModal">
+        <div class="modal">
+            <div class="modal-ic" style="background: #fef2f2; color: var(--err);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="3 6 5 6 21 6"/>
+                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>
+                </svg>
+            </div>
+            <h2 class="modal-title">Remove from History?</h2>
+            <p class="modal-desc">Are you sure you want to remove <strong id="histRemoveName">"Template"</strong> from your history?</p>
+            <div class="modal-acts">
+                <button class="btn btn-sec" id="histRemoveCancel">Cancel</button>
+                <button class="btn btn-red" id="histRemoveConfirm">Remove</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOCS MODAL -->
+    <div class="hd-modal-ov" id="hdDocsModal">
+        <div class="hd-modal">
+            <div class="hd-modal-hd">
+                <div class="hd-modal-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    Documentation
+                </div>
+                <button class="hd-modal-close" id="hdDocsClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="hd-modal-body">
+                <div class="hd-doc-section">
+                    <div class="hd-doc-section-title">Getting Started</div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Quick Start Guide</div>
+                            <div class="hd-doc-item-desc">Learn how to build your first AI prompt in under 5 minutes.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Prompt Builder Overview</div>
+                            <div class="hd-doc-item-desc">Understand each section of the builder: model, files, prompt, and export.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hd-doc-section">
+                    <div class="hd-doc-section-title">Features</div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V4h16v3"/><path d="M5 20h6"/><path d="M13 4l-4 16"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Variables & Placeholders</div>
+                            <div class="hd-doc-item-desc">Use <code>{{ROLE}}</code>, <code>{{TASK}}</code>, and other variables to make reusable prompts.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">File Uploads</div>
+                            <div class="hd-doc-item-desc">Attach PDFs, images, or text files as context for your prompt. Up to 10 files, 20MB each.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Export Options</div>
+                            <div class="hd-doc-item-desc">Export your prompts as plain text, Markdown, or JSON for use in any AI tool.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.4 21H14.2L12.2 16H5.8L3.8 21H1.6L8 5H10L16.4 21Z"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">AI Generate Prompt</div>
+                            <div class="hd-doc-item-desc">Write a rough idea, then click "Generate Prompt" to let AI expand it into a complete, structured prompt.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hd-doc-section">
+                    <div class="hd-doc-section-title">Tips & Best Practices</div>
+                    <div class="hd-doc-tip">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Be specific about the <strong>role</strong> (e.g. "You are a senior software engineer") for better results.
+                    </div>
+                    <div class="hd-doc-tip">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Always define the expected <strong>output format</strong> (list, JSON, paragraph, etc.).
+                    </div>
+                    <div class="hd-doc-tip">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Upload a file to give the AI <strong>context</strong> without repeating it in every prompt.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFO MODAL -->
+    <div class="hd-modal-ov" id="hdInfoModal">
+        <div class="hd-modal hd-modal--sm">
+            <div class="hd-modal-hd">
+                <div class="hd-modal-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    About PromptBuilder
+                </div>
+                <button class="hd-modal-close" id="hdInfoClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="hd-modal-body">
+                <div class="hd-info-hero">
+                    <div class="hd-info-logo">PF</div>
+                    <div class="hd-info-name">PromptForge</div>
+                    <div class="hd-info-ver">Version 1.0.0</div>
+                </div>
+                <p class="hd-info-desc">PromptForge helps you build, save, and manage AI prompts for any model — Claude, ChatGPT, Gemini, and more. Craft perfect prompts with variables, file context, and smart templates.</p>
+                <div class="hd-info-stats">
+                    <div class="hd-info-stat">
+                        <div class="hd-info-stat-num">6+</div>
+                        <div class="hd-info-stat-lbl">AI Models</div>
+                    </div>
+                    <div class="hd-info-stat">
+                        <div class="hd-info-stat-num">50+</div>
+                        <div class="hd-info-stat-lbl">Templates</div>
+                    </div>
+                    <div class="hd-info-stat">
+                        <div class="hd-info-stat-num">∞</div>
+                        <div class="hd-info-stat-lbl">Prompts (Pro)</div>
+                    </div>
+                </div>
+                <div class="hd-info-links">
+                    <a href="help-support.html" class="hd-info-link">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        Help &amp; Support
+                    </a>
+                    <a href="upgrade-now.html" class="hd-info-link hd-info-link--pri">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
+                        Upgrade to Pro
+                    </a>
+                </div>
+                <div class="hd-info-copy">© 2025 PromptForge. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+    <!-- TOAST CONTAINER -->
+    <div class="toast-wrap" id="toasts"></div>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js//history.js"></script>
+</body>
+
+</html>

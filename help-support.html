@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptForge — Help &amp; Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180"<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- ====================================================
+         LEFT SIDEBAR
+         ==================================================== -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="./assets/images/logo-dark.png" id="logoImg" alt="LOGO">
+                    </div>
+                </a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <button class="nav-link" onclick="window.location='index.html'">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="14" width="7" height="7" rx="1" />
+                        <rect x="3" y="14" width="7" height="7" rx="1" />
+                    </svg>
+                    <span>New Prompt</span>
+                </button>
+                <a href="my-prompts.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" y1="13" x2="8" y2="13" />
+                        <line x1="16" y1="17" x2="8" y2="17" />
+                    </svg>
+                    <span>My Prompts</span>
+                </a>
+                <a href="templates.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 6h16M4 10h16M4 14h8" />
+                    </svg>
+                    <span>Templates</span>
+                </a>
+                <a href="favorites.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                    <span>Favorites</span>
+                </a>
+                <a href="history.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="12 8 12 12 14 14" />
+                        <circle cx="12" cy="12" r="10" />
+                    </svg>
+                    <span>History</span>
+                </a>
+                <div class="nav-sep"></div>
+                <a href="settings.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3" />
+                        <path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M22 12h-2M4 12H2M18.36 18.36l-1.41-1.41M7.05 7.05L5.64 5.64M12 2v2M12 20v2" />
+                    </svg>
+                    <span>Settings</span>
+                </a>
+                <a href="help-support.html" class="nav-link active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                    <span>Help &amp; Support</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-foot">
+                <div class="up-card">
+                    <div class="up-card-hd">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10" />
+                        </svg>
+                        Upgrade to Pro
+                    </div>
+                    <p class="up-card-p">Unlock premium templates, advanced features, and more.</p>
+                    <button class="btn-up"><a href="upgrade-now.html">Upgrade Now</a></button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ====================================================
+         MAIN AREA
+         ==================================================== -->
+        <div class="main">
+
+            <!-- Header -->
+            <div class="main-hd">
+                <div style="display:flex;align-items:center;gap:10px;">
+                    <button class="stg-back-btn" id="hsBackBtn" style="display:none;" onclick="hsGoHome()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                            <polyline points="15 18 9 12 15 6" />
+                        </svg>
+                    </button>
+                    <div>
+                        <h1 class="main-title" id="hsPageTitle">Help &amp; Support</h1>
+                        <p class="mp-subtitle" id="hsPageSubtitle">How can we help you today?</p>
+                    </div>
+                </div>
+                <div class="hd-actions">
+                    <button class="hd-btn" id="hdDocsBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                        Docs
+                    </button>
+                    <button class="hd-btn icon-only" id="hdInfoBtn" title="Help">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                            <line x1="12" y1="17" x2="12.01" y2="17" />
+                        </svg>
+                    </button>
+                    <button class="hd-btn icon-only" id="mpThemeBtn" title="Toggle theme">
+                        <svg id="mpMoonSvg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                        </svg>
+                        <svg id="mpSunSvg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" style="display:none">
+                            <circle cx="12" cy="12" r="5" />
+                            <line x1="12" y1="1" x2="12" y2="3" /><line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" /><line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </svg>
+                    </button>
+                    
+                    <div class="hd-avatar-wrap" style="position:relative">
+                        <div class="avatar" id="hdAvatarBtn" title="Profile">U</div>
+                        <div class="hd-avatar-dd" id="hdAvatarDd">
+                            <div class="hd-avatar-profile">
+                                <div class="hd-av-pic">U</div>
+                                <div class="hd-av-info">
+                                    <div class="hd-av-name">User</div>
+                                    <div class="hd-av-email">user@example.com</div>
+                                </div>
+                            </div>
+                            <div class="hd-av-sep"></div>
+                            <a href="settings.html" class="hd-av-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M22 12h-2M4 12H2M18.36 18.36l-1.41-1.41M7.05 7.05L5.64 5.64M12 2v2M12 20v2"/></svg>
+                                Settings
+                            </a>
+                            <a href="upgrade-now.html" class="hd-av-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
+                                Upgrade to Pro
+                            </a>
+                            <div class="hd-av-sep"></div>
+                            <div class="hd-av-item hd-av-item--danger" id="hdSignOutBtn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                                Sign Out
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Body -->
+            <div class="hs-body" id="hsBody">
+
+                <!-- ==========================================
+                 VIEW: HOME
+                 ========================================== -->
+                <div class="hs-view hs-view--active" id="hsViewHome">
+                    <div class="mp-content">
+
+                        <!-- Search -->
+                        <div class="hs-search-wrap">
+                            <div class="hs-search-box">
+                                <svg class="hs-search-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                </svg>
+                                <input type="text" class="hs-search-inp" id="hsSearchInput" placeholder="Search for help articles..." oninput="hsHandleSearch(this.value)" onkeydown="hsSearchKeydown(event)">
+                                <button class="hs-search-clear" id="hsSearchClear" onclick="hsClearSearch()" style="display:none;">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                        <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Top Support Options -->
+                        <div class="card">
+                            <div class="card-hd">
+                                <div class="card-title">Top Support Options</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="hs-support-grid">
+                                    <button class="hs-support-opt" onclick="hsNavigate('helpcenter')">
+                                        <div class="hs-support-ic hs-ic-blue">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                                            </svg>
+                                        </div>
+                                        <div class="hs-support-label">Help Center</div>
+                                        <div class="hs-support-sub">Browse articles and find answers to common questions.</div>
+                                    </button>
+                                    <button class="hs-support-opt" onclick="hsNavigate('contact')">
+                                        <div class="hs-support-ic hs-ic-green">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                            </svg>
+                                        </div>
+                                        <div class="hs-support-label">Contact Support</div>
+                                        <div class="hs-support-sub">Get in touch with our support team.</div>
+                                    </button>
+                                    <button class="hs-support-opt" onclick="hsOpenVideoTutorials()">
+                                        <div class="hs-support-ic hs-ic-purple">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <polygon points="23 7 16 12 23 17 23 7" /><rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                                            </svg>
+                                        </div>
+                                        <div class="hs-support-label">Video Tutorials</div>
+                                        <div class="hs-support-sub">Watch step-by-step video guides and tutorials.</div>
+                                    </button>
+                                    <button class="hs-support-opt" onclick="hsOpenFeatureRequest()">
+                                        <div class="hs-support-ic hs-ic-orange">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10" />
+                                            </svg>
+                                        </div>
+                                        <div class="hs-support-label">Feature Request</div>
+                                        <div class="hs-support-sub">Suggest new features and improvements.</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Popular Articles -->
+                        <div class="card">
+                            <div class="card-hd" style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="card-title">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" />
+                                    </svg>
+                                    Popular Articles
+                                </div>
+                                <button class="hs-view-all-btn" onclick="hsNavigate('helpcenter')">View all articles →</button>
+                            </div>
+                            <div class="card-body" style="padding:0;">
+                                <div class="hs-article-list" id="hsPopularList"></div>
+                            </div>
+                        </div>
+
+                        <!-- Still need help -->
+                        <div class="hs-still-help">
+                            <div class="hs-still-help-text">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                    <circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><line x1="12" y1="17" x2="12.01" y2="17" />
+                                </svg>
+                                <span>Still need help? Our support team is here to help you.</span>
+                            </div>
+                            <button class="btn btn-sec" onclick="hsNavigate('contact')">Contact Support</button>
+                        </div>
+
+                    </div>
+                </div><!-- /hsViewHome -->
+
+
+                <!-- ==========================================
+                 VIEW: SEARCH RESULTS
+                 ========================================== -->
+                <div class="hs-view" id="hsViewSearch">
+                    <div class="mp-content">
+                        <div class="card">
+                            <div class="card-hd" style="display:flex;align-items:center;justify-content:space-between;">
+                                <div>
+                                    <div class="card-title" id="hsSearchResultsTitle">Search results</div>
+                                    <p class="card-sub" id="hsSearchResultsSub"></p>
+                                </div>
+                                <button class="hs-view-all-btn" onclick="hsClearSearch()">Clear search</button>
+                            </div>
+                            <div class="card-body" style="padding:0;">
+                                <div class="hs-article-list" id="hsSearchResultsList"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /hsViewSearch -->
+
+
+                <!-- ==========================================
+                 VIEW: ARTICLE
+                 ========================================== -->
+                <div class="hs-view" id="hsViewArticle">
+                    <div class="mp-content">
+                        <div class="card">
+                            <div class="card-hd" style="display:flex;align-items:center;justify-content:space-between;">
+                                <button class="hs-back-link" onclick="hsGoBack()">← Back to results</button>
+                                <button class="hd-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" />
+                                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" /><line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                                    </svg>
+                                    Share
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="hs-article-header">
+                                    <h2 class="hs-article-title" id="hsArticleTitle"></h2>
+                                    <p class="hs-article-desc" id="hsArticleDesc"></p>
+                                    <p class="hs-article-meta" id="hsArticleMeta"></p>
+                                </div>
+
+                                <div class="hs-article-layout">
+                                    <!-- TOC -->
+                                    <div class="hs-article-toc" id="hsArticleToc"></div>
+                                    <!-- Content -->
+                                    <div class="hs-article-content" id="hsArticleContent"></div>
+                                </div>
+
+                                <!-- Recommended Template -->
+                                <div class="hs-rec-template" id="hsRecTemplate" style="display:none;">
+                                    <div class="hs-rec-template-hd">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                        </svg>
+                                        Recommended Template
+                                    </div>
+                                    <div class="hs-rec-template-card">
+                                        <div class="hs-rec-template-info">
+                                            <div class="hs-rec-template-icon">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="8" y1="6" x2="21" y2="6" /><line x1="8" y1="12" x2="21" y2="12" /><line x1="8" y1="18" x2="21" y2="18" />
+                                                    <line x1="3" y1="6" x2="3.01" y2="6" /><line x1="3" y1="12" x2="3.01" y2="12" /><line x1="3" y1="18" x2="3.01" y2="18" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <div class="hs-rec-template-name" id="hsRecTemplateName"></div>
+                                                <div class="hs-rec-template-sub" id="hsRecTemplateSub"></div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-pri" onclick="hsUseTemplate()">Use Template</button>
+                                    </div>
+                                </div>
+
+                                <!-- Article nav -->
+                                <div class="hs-article-nav">
+                                    <button class="hs-article-nav-btn" id="hsArticlePrev" onclick="hsArticleNav('prev')">← Previous</button>
+                                    <button class="hs-article-nav-btn" id="hsArticleNext" onclick="hsArticleNav('next')">Next →</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /hsViewArticle -->
+
+
+                <!-- ==========================================
+                 VIEW: HELP CENTER
+                 ========================================== -->
+                <div class="hs-view" id="hsViewHelpCenter">
+                    <div class="mp-content">
+                        <!-- Tabs -->
+                        <div class="hs-tabs">
+                            <button class="hs-tab active" id="hsTabHelpCenter" onclick="hsSetTab('helpcenter')">Help Center</button>
+                            <button class="hs-tab" id="hsTabContact" onclick="hsSetTab('contact')">Contact Support</button>
+                            <button class="hs-tab" id="hsTabTickets" onclick="hsSetTab('tickets')">My Tickets</button>
+                        </div>
+
+                        <!-- Help Center Panel -->
+                        <div class="hs-tab-panel hs-tab-panel--active" id="hsPanelHelpCenter">
+                            <div class="card">
+                                <div class="card-hd">
+                                    <div class="card-title">All Articles</div>
+                                    <p class="card-sub">Browse all help articles and guides.</p>
+                                </div>
+                                <div class="card-body" style="padding:0;">
+                                    <div class="hs-article-list" id="hsAllArticlesList"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Support Panel -->
+                        <div class="hs-tab-panel" id="hsPanelContact">
+                            <div class="card">
+                                <div class="card-hd">
+                                    <div class="card-title">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                        </svg>
+                                        Contact Support
+                                    </div>
+                                    <p class="card-sub">Submit a request and our team will get back to you.</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="hs-contact-form">
+                                        <div class="stg-field">
+                                            <label class="stg-label">What can we help you with?</label>
+                                            <select class="stg-select" id="hsContactCategory">
+                                                <option value="">Choose a category</option>
+                                                <option value="billing">Billing &amp; Subscription</option>
+                                                <option value="technical">Technical Issue</option>
+                                                <option value="feature">Feature Request</option>
+                                                <option value="account">Account &amp; Login</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="stg-field">
+                                            <label class="stg-label">Subject</label>
+                                            <input type="text" class="stg-input" id="hsContactSubject" placeholder="Briefly describe your issue">
+                                        </div>
+                                        <div class="stg-field">
+                                            <label class="stg-label">Description</label>
+                                            <textarea class="stg-textarea" id="hsContactDesc" placeholder="Please provide details about your issue..." rows="5"></textarea>
+                                        </div>
+                                        <div class="stg-field">
+                                            <label class="stg-label">Attachments (optional)</label>
+                                            <div class="hs-upload-zone" id="hsUploadZone" onclick="document.getElementById('hsFileInput').click()">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="17 8 12 3 7 8" /><line x1="12" y1="3" x2="12" y2="15" />
+                                                </svg>
+                                                <span>Upload files or screenshots</span>
+                                                <span class="hs-upload-hint">PNG, JPG, PDF up to 10MB</span>
+                                                <input type="file" id="hsFileInput" style="display:none;" multiple accept=".png,.jpg,.jpeg,.pdf" onchange="hsHandleFiles(this.files)">
+                                            </div>
+                                            <div id="hsFileList" class="hs-file-list"></div>
+                                        </div>
+                                        <div class="stg-form-actions">
+                                            <button class="btn btn-sec" onclick="hsNavigate('home')">Cancel</button>
+                                            <button class="btn btn-pri" onclick="hsSubmitTicket()">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                                </svg>
+                                                Send Message
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- My Tickets Panel -->
+                        <div class="hs-tab-panel" id="hsPanelTickets">
+                            <div class="card">
+                                <div class="card-hd" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+                                    <div class="card-title">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                            <path d="M15 5H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9l-4-4z" /><polyline points="15 5 15 9 19 9" />
+                                        </svg>
+                                        My Support Tickets
+                                    </div>
+                                    <div style="display:flex;align-items:center;gap:8px;">
+                                        <div style="position:relative;">
+                                            <svg style="position:absolute;left:8px;top:50%;transform:translateY(-50%);width:13px;height:13px;color:var(--t3);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                            </svg>
+                                            <input type="text" class="stg-input" style="padding-left:28px;height:32px;font-size:12.5px;width:180px;" placeholder="Search tickets..." oninput="hsFilterTickets(this.value)">
+                                        </div>
+                                        <select class="stg-select" style="height:32px;font-size:12.5px;padding:0 8px;width:120px;" onchange="hsFilterTicketStatus(this.value)">
+                                            <option value="">All Status</option>
+                                            <option value="open">Open</option>
+                                            <option value="in-progress">In Progress</option>
+                                            <option value="resolved">Resolved</option>
+                                            <option value="closed">Closed</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="card-body" style="padding:0;">
+                                    <div class="hs-ticket-list" id="hsTicketList"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /hs-tab-panels -->
+                </div><!-- /hsViewHelpCenter -->
+
+
+                <!-- ==========================================
+                 VIEW: TICKET SUBMITTED
+                 ========================================== -->
+                <div class="hs-view" id="hsViewSubmitted">
+                    <div class="mp-content">
+                        <div class="card">
+                            <div class="card-hd">
+                                <button class="hs-back-link" onclick="hsNavigate('helpcenter'); hsSetTab('helpcenter')">← Back to Help &amp; Support</button>
+                            </div>
+                            <div class="card-body">
+                                <div class="hs-submitted">
+                                    <div class="hs-submitted-ic">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                    </div>
+                                    <h2 class="hs-submitted-title">Thank you!</h2>
+                                    <p class="hs-submitted-sub">Your support request has been submitted.</p>
+                                    <div class="hs-ticket-id-box">
+                                        <span class="hs-ticket-id-label">Ticket ID</span>
+                                        <span class="hs-ticket-id-val" id="hsNewTicketId">#PB-00000</span>
+                                    </div>
+                                    <div class="hs-next-steps">
+                                        <div class="hs-next-title">What happens next?</div>
+                                        <ul class="hs-next-list">
+                                            <li>
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                                                    <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
+                                                </svg>
+                                                Our team will review your request
+                                            </li>
+                                            <li>
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" />
+                                                </svg>
+                                                You'll receive an email confirmation shortly
+                                            </li>
+                                            <li>
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                                </svg>
+                                                We'll get back to you as soon as possible
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-pri" onclick="hsNavigate('helpcenter'); hsSetTab('helpcenter')">
+                                        Go to Help &amp; Support
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /hsViewSubmitted -->
+
+            </div><!-- /hs-body -->
+        </div><!-- /main -->
+    </div><!-- /app -->
+
+    <!-- DOCS MODAL -->
+    <div class="hd-modal-ov" id="hdDocsModal">
+        <div class="hd-modal">
+            <div class="hd-modal-hd">
+                <div class="hd-modal-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    Documentation
+                </div>
+                <button class="hd-modal-close" id="hdDocsClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="hd-modal-body">
+                <div class="hd-doc-section">
+                    <div class="hd-doc-section-title">Getting Started</div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Quick Start Guide</div>
+                            <div class="hd-doc-item-desc">Learn how to build your first AI prompt in under 5 minutes.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Prompt Builder Overview</div>
+                            <div class="hd-doc-item-desc">Understand each section of the builder: model, files, prompt, and export.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hd-doc-section">
+                    <div class="hd-doc-section-title">Features</div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V4h16v3"/><path d="M5 20h6"/><path d="M13 4l-4 16"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Variables & Placeholders</div>
+                            <div class="hd-doc-item-desc">Use <code>{{ROLE}}</code>, <code>{{TASK}}</code>, and other variables to make reusable prompts.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">File Uploads</div>
+                            <div class="hd-doc-item-desc">Attach PDFs, images, or text files as context for your prompt. Up to 10 files, 20MB each.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Export Options</div>
+                            <div class="hd-doc-item-desc">Export your prompts as plain text, Markdown, or JSON for use in any AI tool.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.4 21H14.2L12.2 16H5.8L3.8 21H1.6L8 5H10L16.4 21Z"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">AI Generate Prompt</div>
+                            <div class="hd-doc-item-desc">Write a rough idea, then click "Generate Prompt" to let AI expand it into a complete, structured prompt.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hd-doc-section">
+                    <div class="hd-doc-section-title">Tips & Best Practices</div>
+                    <div class="hd-doc-tip">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Be specific about the <strong>role</strong> (e.g. "You are a senior software engineer") for better results.
+                    </div>
+                    <div class="hd-doc-tip">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Always define the expected <strong>output format</strong> (list, JSON, paragraph, etc.).
+                    </div>
+                    <div class="hd-doc-tip">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Upload a file to give the AI <strong>context</strong> without repeating it in every prompt.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFO MODAL -->
+    <div class="hd-modal-ov" id="hdInfoModal">
+        <div class="hd-modal hd-modal--sm">
+            <div class="hd-modal-hd">
+                <div class="hd-modal-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    About PromptBuilder
+                </div>
+                <button class="hd-modal-close" id="hdInfoClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="hd-modal-body">
+                <div class="hd-info-hero">
+                    <div class="hd-info-logo">PF</div>
+                    <div class="hd-info-name">PromptForge</div>
+                    <div class="hd-info-ver">Version 1.0.0</div>
+                </div>
+                <p class="hd-info-desc">PromptForge helps you build, save, and manage AI prompts for any model — Claude, ChatGPT, Gemini, and more. Craft perfect prompts with variables, file context, and smart templates.</p>
+                <div class="hd-info-stats">
+                    <div class="hd-info-stat">
+                        <div class="hd-info-stat-num">6+</div>
+                        <div class="hd-info-stat-lbl">AI Models</div>
+                    </div>
+                    <div class="hd-info-stat">
+                        <div class="hd-info-stat-num">50+</div>
+                        <div class="hd-info-stat-lbl">Templates</div>
+                    </div>
+                    <div class="hd-info-stat">
+                        <div class="hd-info-stat-num">∞</div>
+                        <div class="hd-info-stat-lbl">Prompts (Pro)</div>
+                    </div>
+                </div>
+                <div class="hd-info-links">
+                    <a href="help-support.html" class="hd-info-link">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        Help &amp; Support
+                    </a>
+                    <a href="upgrade-now.html" class="hd-info-link hd-info-link--pri">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
+                        Upgrade to Pro
+                    </a>
+                </div>
+                <div class="hd-info-copy">© 2025 PromptForge. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+    <!-- TOAST CONTAINER -->
+    <div class="toast-wrap" id="toasts"></div>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/help-support.js"></script>
+</body>
+
+</html>

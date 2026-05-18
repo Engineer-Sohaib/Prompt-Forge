@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptForge — Templates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180"<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- ====================================================
+         LEFT SIDEBAR
+         ==================================================== -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <a href="index.html">
+                    <div class="logo">
+                         <img src="./assets/images/logo-dark.png" id="logoImg" alt="LOGO">
+                    </div>
+                </a>
+            </div>
+
+            <nav class="sidebar-nav">
+                <button class="nav-link" onclick="window.location='index.html'">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="14" width="7" height="7" rx="1" />
+                        <rect x="3" y="14" width="7" height="7" rx="1" />
+                    </svg>
+                    <span>New Prompt</span>
+                </button>
+                <a href="my-prompts.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" y1="13" x2="8" y2="13" />
+                        <line x1="16" y1="17" x2="8" y2="17" />
+                    </svg>
+                    <span>My Prompts</span>
+                </a>
+                <a href="templates.html" class="nav-link active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 6h16M4 10h16M4 14h8" />
+                    </svg>
+                    <span>Templates</span>
+                </a>
+                <a href="favorites.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                    <span>Favorites</span>
+                </a>
+                <a href="history.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="12 8 12 12 14 14" />
+                        <circle cx="12" cy="12" r="10" />
+                    </svg>
+                    <span>History</span>
+                </a>
+                <div class="nav-sep"></div>
+                <a href="settings.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3" />
+                        <path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M22 12h-2M4 12H2M18.36 18.36l-1.41-1.41M7.05 7.05L5.64 5.64M12 2v2M12 20v2" />
+                    </svg>
+                    <span>Settings</span>
+                </a>
+                <a href="help-support.html" class="nav-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                    <span>Help &amp; Support</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-foot">
+                <div class="up-card">
+                    <div class="up-card-hd">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10" />
+                        </svg>
+                        Upgrade to Pro
+                    </div>
+                    <p class="up-card-p">Unlock premium templates, advanced features, and more.</p>
+                    <button class="btn-up"><a href="upgrade-now.html">Upgrade Now</a></button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ====================================================
+         MAIN AREA
+         ==================================================== -->
+        <div class="main">
+
+            <!-- Header -->
+            <div class="main-hd">
+                <div>
+                    <h1 class="main-title">Templates</h1>
+                    <p class="mp-subtitle">Start with a template and customize it to create powerful prompts in seconds.</p>
+                </div>
+                <div class="hd-actions">
+                    <button class="hd-btn" id="hdDocsBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                        Docs
+                    </button>
+                    <button class="hd-btn icon-only" id="hdInfoBtn" title="Help">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                            <line x1="12" y1="17" x2="12.01" y2="17" />
+                        </svg>
+                    </button>
+                    <button class="hd-btn icon-only" id="mpThemeBtn" title="Toggle theme">
+                        <svg id="mpMoonSvg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                        </svg>
+                        <svg id="mpSunSvg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" style="display:none">
+                            <circle cx="12" cy="12" r="5" />
+                            <line x1="12" y1="1" x2="12" y2="3" /><line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" /><line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </svg>
+                    </button>
+                    
+                    <div class="hd-avatar-wrap" style="position:relative">
+                        <div class="avatar" id="hdAvatarBtn" title="Profile">U</div>
+                        <div class="hd-avatar-dd" id="hdAvatarDd">
+                            <div class="hd-avatar-profile">
+                                <div class="hd-av-pic">U</div>
+                                <div class="hd-av-info">
+                                    <div class="hd-av-name">User</div>
+                                    <div class="hd-av-email">user@example.com</div>
+                                </div>
+                            </div>
+                            <div class="hd-av-sep"></div>
+                            <a href="settings.html" class="hd-av-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M22 12h-2M4 12H2M18.36 18.36l-1.41-1.41M7.05 7.05L5.64 5.64M12 2v2M12 20v2"/></svg>
+                                Settings
+                            </a>
+                            <a href="upgrade-now.html" class="hd-av-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
+                                Upgrade to Pro
+                            </a>
+                            <div class="hd-av-sep"></div>
+                            <div class="hd-av-item hd-av-item--danger" id="hdSignOutBtn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                                Sign Out
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── TOOLBAR ── -->
+            <div class="tpl-toolbar">
+                <div class="tpl-search-wrap">
+                    <svg class="tpl-search-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                    <input class="tpl-search" id="tplSearch" type="text" placeholder="Search templates by name, use case, or keyword…">
+                    <button class="tpl-search-clear" id="tplSearchClear" style="display:none">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                </div>
+                <div class="tpl-toolbar-right">
+                    <div class="mp-select-wrap">
+                        <select class="mp-select" id="tplCatFilter">
+                            <option value="">All Categories</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="content">Content Creation</option>
+                            <option value="business">Business</option>
+                            <option value="education">Education</option>
+                            <option value="coding">Coding</option>
+                            <option value="customer-support">Customer Support</option>
+                        </select>
+                        <svg class="mp-select-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="mp-select-wrap">
+                        <select class="mp-select" id="tplModelFilter">
+                            <option value="">All Models</option>
+                            <option value="claude">Claude</option>
+                            <option value="chatgpt">ChatGPT</option>
+                            <option value="gemini">Gemini</option>
+                            <option value="deepseek">DeepSeek</option>
+                        </select>
+                        <svg class="mp-select-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="mp-select-wrap">
+                        <select class="mp-select" id="tplSort">
+                            <option value="popular">Sort by: Popular</option>
+                            <option value="newest">Sort by: Newest</option>
+                            <option value="name">Sort by: Name</option>
+                            <option value="uses">Sort by: Most Used</option>
+                        </select>
+                        <svg class="mp-select-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="tpl-view-btns">
+                        <button class="mp-view-btn" id="tplListViewBtn" title="List view">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+                                <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+                            </svg>
+                        </button>
+                        <button class="mp-view-btn active" id="tplGridViewBtn" title="Grid view">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="btn btn-pri tpl-create-btn" id="tplCreateBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                            <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                        Create Template
+                    </button>
+                </div>
+            </div>
+
+            <!-- ── CATEGORY TABS ── -->
+            <div class="tpl-cat-tabs-wrap">
+                <div class="tpl-cat-tabs" id="tplCatTabs">
+                    <button class="tpl-cat-tab active" data-cat="">
+                        <span class="tpl-cat-tab-icon" style="background:linear-gradient(135deg,#5bd45b,#40b850)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+                        </span>
+                        <div class="tpl-cat-tab-body">
+                            <span class="tpl-cat-tab-name">All Templates</span>
+                            <span class="tpl-cat-tab-count" id="tabCountAll">48</span>
+                        </div>
+                    </button>
+                    <button class="tpl-cat-tab" data-cat="marketing">
+                        <span class="tpl-cat-tab-icon" style="background:linear-gradient(135deg,#f59e0b,#d97706)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                        </span>
+                        <div class="tpl-cat-tab-body">
+                            <span class="tpl-cat-tab-name">Marketing</span>
+                            <span class="tpl-cat-tab-count" id="tabCountMarketing">8</span>
+                        </div>
+                    </button>
+                    <button class="tpl-cat-tab" data-cat="content">
+                        <span class="tpl-cat-tab-icon" style="background:linear-gradient(135deg,#3b82f6,#2563eb)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                        </span>
+                        <div class="tpl-cat-tab-body">
+                            <span class="tpl-cat-tab-name">Content Creation</span>
+                            <span class="tpl-cat-tab-count" id="tabCountContent">10</span>
+                        </div>
+                    </button>
+                    <button class="tpl-cat-tab" data-cat="business">
+                        <span class="tpl-cat-tab-icon" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                        </span>
+                        <div class="tpl-cat-tab-body">
+                            <span class="tpl-cat-tab-name">Business</span>
+                            <span class="tpl-cat-tab-count" id="tabCountBusiness">9</span>
+                        </div>
+                    </button>
+                    <button class="tpl-cat-tab" data-cat="education">
+                        <span class="tpl-cat-tab-icon" style="background:linear-gradient(135deg,#ec4899,#db2777)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        </span>
+                        <div class="tpl-cat-tab-body">
+                            <span class="tpl-cat-tab-name">Education</span>
+                            <span class="tpl-cat-tab-count" id="tabCountEducation">6</span>
+                        </div>
+                    </button>
+                    <button class="tpl-cat-tab" data-cat="coding">
+                        <span class="tpl-cat-tab-icon" style="background:linear-gradient(135deg,#14b8a6,#0d9488)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </span>
+                        <div class="tpl-cat-tab-body">
+                            <span class="tpl-cat-tab-name">Coding</span>
+                            <span class="tpl-cat-tab-count" id="tabCountCoding">8</span>
+                        </div>
+                    </button>
+                    <button class="tpl-cat-tab tpl-cat-more" id="tplCatMore">
+                        <span class="tpl-cat-tab-icon" style="background:var(--s2)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="var(--t2)" stroke-width="2" stroke-linecap="round"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg>
+                        </span>
+                        <div class="tpl-cat-tab-body">
+                            <span class="tpl-cat-tab-name" style="color:var(--t2)">More</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ── MAIN CONTENT + DETAIL PANEL ── -->
+            <div class="tpl-body">
+
+                <!-- Scrollable grid area -->
+                <div class="tpl-scroll" id="tplScroll">
+
+                    <!-- Result bar (shown when searching) -->
+                    <div class="fav-result-bar" id="tplResultBar" style="display:none; margin: 0 0 14px; border-radius: var(--rad); border: 1px solid var(--bd);">
+                        <span id="tplResultCount">0 results</span>
+                        <button class="fav-clear-search" id="tplClearSearch">Clear search</button>
+                    </div>
+
+                    <!-- Popular Templates section -->
+                    <div class="tpl-section" id="tplPopularSection">
+                        <div class="tpl-section-hd">
+                            <span class="tpl-section-title">Popular Templates</span>
+                            <button class="tpl-view-all" id="tplViewAllPopular">View all</button>
+                        </div>
+                        <div class="tpl-grid" id="tplPopularGrid">
+                            <!-- rendered by JS -->
+                        </div>
+                    </div>
+
+                    <!-- All Templates section -->
+                    <div class="tpl-section" id="tplAllSection">
+                        <div class="tpl-section-hd">
+                            <span class="tpl-section-title" id="tplAllSectionTitle">All Templates</span>
+                            <button class="tpl-filter-btn" id="tplFilterBtn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="13" height="13">
+                                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                                </svg>
+                                Filter
+                            </button>
+                        </div>
+                        <div class="tpl-grid" id="tplAllGrid">
+                            <!-- rendered by JS -->
+                        </div>
+                        <!-- View more card -->
+                        <div class="tpl-view-more-card" id="tplViewMoreCard">
+                            <div class="tpl-view-more-ic">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+                                    <path d="M8 10h8M8 14h5"/>
+                                </svg>
+                            </div>
+                            <p class="tpl-view-more-title">View more templates</p>
+                            <p class="tpl-view-more-desc">Explore templates across different use cases.</p>
+                            <button class="btn btn-sec tpl-browse-btn" id="tplBrowseAllBtn">Browse All Templates</button>
+                        </div>
+                    </div>
+
+                    <!-- Empty state -->
+                    <div class="fav-empty" id="tplEmpty" style="display:none">
+                        <div class="fav-empty-ic">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 6h16M4 10h16M4 14h8" />
+                            </svg>
+                        </div>
+                        <h3 class="fav-empty-title">No templates found</h3>
+                        <p class="fav-empty-desc" id="tplEmptyDesc">Try a different search term or category.</p>
+                        <button class="btn btn-pri" id="tplEmptyResetBtn">Clear Filters</button>
+                    </div>
+                </div>
+
+                <!-- ── DETAIL PANEL ── -->
+                <aside class="tpl-detail" id="tplDetail" style="display:none">
+                    <div class="tpl-detail-hd">
+                        <div class="tpl-detail-icon-wrap" id="tplDetailIcon"></div>
+                        <div class="tpl-detail-title-wrap">
+                            <span class="tpl-detail-name" id="tplDetailName">Template Name</span>
+                            <button class="fav-star-btn" id="tplDetailStar" title="Add to favorites">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="tpl-detail-model" id="tplDetailModel"></div>
+                        <button class="tpl-detail-close" id="tplDetailClose">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                        </button>
+                    </div>
+
+                    <div class="tpl-detail-body">
+                        <div class="tpl-detail-section">
+                            <div class="tpl-detail-label">Description</div>
+                            <p class="tpl-detail-desc" id="tplDetailDesc"></p>
+                        </div>
+
+                        <div class="tpl-detail-section">
+                            <div class="tpl-detail-label">Best for</div>
+                            <div class="tpl-detail-tags" id="tplDetailTags"></div>
+                        </div>
+
+                        <div class="tpl-detail-section">
+                            <div class="tpl-detail-label">Includes</div>
+                            <ul class="tpl-detail-includes" id="tplDetailIncludes"></ul>
+                        </div>
+
+                        <div class="tpl-detail-stats">
+                            <div class="tpl-detail-stat">
+                                <span class="tpl-detail-stat-val" id="tplDetailUses">0</span>
+                                <span class="tpl-detail-stat-key">Uses</span>
+                            </div>
+                            <div class="tpl-detail-stat">
+                                <span class="tpl-detail-stat-val tpl-stat-rating">
+                                    <svg viewBox="0 0 24 24" width="13" height="13" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <span id="tplDetailRating">4.8</span>
+                                </span>
+                                <span class="tpl-detail-stat-key">Rating</span>
+                            </div>
+                            <div class="tpl-detail-stat">
+                                <span class="tpl-detail-stat-val" id="tplDetailFavs">0</span>
+                                <span class="tpl-detail-stat-key">Favorites</span>
+                            </div>
+                        </div>
+
+                        <div class="tpl-detail-section">
+                            <div class="tpl-detail-label">
+                                Preview
+                                <button class="tpl-see-full" id="tplSeeFullBtn">See full template</button>
+                            </div>
+                            <div class="tpl-detail-preview" id="tplDetailPreview"></div>
+                        </div>
+
+                        <div class="tpl-detail-section">
+                            <div class="tpl-detail-label">Use with</div>
+                            <div class="tpl-detail-model-row" id="tplDetailModelRow"></div>
+                        </div>
+                    </div>
+
+                    <div class="tpl-detail-foot">
+                        <button class="btn btn-pri" id="tplUseBtn" style="width:100%">Use Template</button>
+                        <button class="btn btn-sec" id="tplCustomizeBtn" style="width:100%">Customize Template</button>
+                    </div>
+                </aside>
+
+            </div>
+            <!-- /tpl-body -->
+
+        </div>
+        <!-- /main -->
+    </div>
+    <!-- /app -->
+
+    <!-- ====================================================
+     USE TEMPLATE MODAL
+     ==================================================== -->
+    <div class="modal-ov" id="tplUseModal">
+        <div class="modal fav-use-modal">
+            <button class="fav-modal-close" id="tplUseClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <h2 class="modal-title" style="text-align:left; font-size:15px; margin-bottom:4px;">Use Template</h2>
+            <div class="fav-use-card" id="tplUseCard"></div>
+            <p class="fav-use-label">Choose how you want to use this template:</p>
+            <div class="fav-use-options">
+                <label class="fav-use-opt">
+                    <input type="radio" name="tplUseMode" value="recommended" checked />
+                    <span class="fav-use-opt-body">
+                        <span class="fav-use-opt-title">Use with <span id="tplOptModelName">Claude 3.5 Sonnet</span></span>
+                    </span>
+                    <span class="fav-use-badge">Recommended</span>
+                </label>
+                <label class="fav-use-opt">
+                    <input type="radio" name="tplUseMode" value="different" />
+                    <span class="fav-use-opt-body">
+                        <span class="fav-use-opt-title">Use with a different model</span>
+                    </span>
+                </label>
+                <label class="fav-use-opt">
+                    <input type="radio" name="tplUseMode" value="customize" />
+                    <span class="fav-use-opt-body">
+                        <span class="fav-use-opt-title">Customize before use</span>
+                    </span>
+                </label>
+            </div>
+            <div class="modal-acts" style="margin-top:20px;">
+                <button class="btn btn-sec" id="tplUseCancel">Cancel</button>
+                <button class="btn btn-pri" id="tplUseContinue">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CREATE TEMPLATE MODAL -->
+    <div class="modal-ov" id="tplCreateModal">
+        <div class="modal tpl-create-modal">
+            <button class="fav-modal-close" id="tplCreateClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <h2 class="modal-title" style="text-align:left; font-size:15px; margin-bottom:2px;">Create New Template</h2>
+            <p style="font-size:12.5px; color:var(--t2); margin-bottom:16px;">Build a reusable prompt template for your workflow.</p>
+
+            <div class="tpl-form-group">
+                <label class="tpl-form-label">Template Name <span style="color:var(--err)">*</span></label>
+                <input type="text" class="tpl-form-input" id="tplCreateName" placeholder="e.g. Customer Support Reply">
+            </div>
+            <div class="tpl-form-group">
+                <label class="tpl-form-label">Category</label>
+                <div class="mp-select-wrap" style="width:100%">
+                    <select class="mp-select" id="tplCreateCat" style="width:100%; height:36px">
+                        <option value="marketing">Marketing</option>
+                        <option value="content">Content Creation</option>
+                        <option value="business">Business</option>
+                        <option value="education">Education</option>
+                        <option value="coding">Coding</option>
+                        <option value="customer-support">Customer Support</option>
+                    </select>
+                    <svg class="mp-select-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+            </div>
+            <div class="tpl-form-group">
+                <label class="tpl-form-label">Description</label>
+                <input type="text" class="tpl-form-input" id="tplCreateDesc" placeholder="Brief description of what this template does">
+            </div>
+            <div class="tpl-form-group">
+                <label class="tpl-form-label">Template Content <span style="color:var(--err)">*</span></label>
+                <textarea class="tpl-form-textarea" id="tplCreateContent" placeholder="Write your prompt template here. Use [VARIABLE] for dynamic parts."></textarea>
+            </div>
+            <div class="modal-acts">
+                <button class="btn btn-sec" id="tplCreateCancelBtn">Cancel</button>
+                <button class="btn btn-pri" id="tplCreateSaveBtn">Create Template</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOCS MODAL -->
+    <div class="hd-modal-ov" id="hdDocsModal">
+        <div class="hd-modal">
+            <div class="hd-modal-hd">
+                <div class="hd-modal-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    Documentation
+                </div>
+                <button class="hd-modal-close" id="hdDocsClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="hd-modal-body">
+                <div class="hd-doc-section">
+                    <div class="hd-doc-section-title">Getting Started</div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Quick Start Guide</div>
+                            <div class="hd-doc-item-desc">Learn how to build your first AI prompt in under 5 minutes.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Prompt Builder Overview</div>
+                            <div class="hd-doc-item-desc">Understand each section of the builder: model, files, prompt, and export.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hd-doc-section">
+                    <div class="hd-doc-section-title">Features</div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V4h16v3"/><path d="M5 20h6"/><path d="M13 4l-4 16"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Variables & Placeholders</div>
+                            <div class="hd-doc-item-desc">Use <code>{{ROLE}}</code>, <code>{{TASK}}</code>, and other variables to make reusable prompts.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">File Uploads</div>
+                            <div class="hd-doc-item-desc">Attach PDFs, images, or text files as context for your prompt. Up to 10 files, 20MB each.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">Export Options</div>
+                            <div class="hd-doc-item-desc">Export your prompts as plain text, Markdown, or JSON for use in any AI tool.</div>
+                        </div>
+                    </div>
+                    <div class="hd-doc-item">
+                        <div class="hd-doc-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.4 21H14.2L12.2 16H5.8L3.8 21H1.6L8 5H10L16.4 21Z"/></svg>
+                        </div>
+                        <div>
+                            <div class="hd-doc-item-title">AI Generate Prompt</div>
+                            <div class="hd-doc-item-desc">Write a rough idea, then click "Generate Prompt" to let AI expand it into a complete, structured prompt.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hd-doc-section">
+                    <div class="hd-doc-section-title">Tips & Best Practices</div>
+                    <div class="hd-doc-tip">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Be specific about the <strong>role</strong> (e.g. "You are a senior software engineer") for better results.
+                    </div>
+                    <div class="hd-doc-tip">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Always define the expected <strong>output format</strong> (list, JSON, paragraph, etc.).
+                    </div>
+                    <div class="hd-doc-tip">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Upload a file to give the AI <strong>context</strong> without repeating it in every prompt.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFO MODAL -->
+    <div class="hd-modal-ov" id="hdInfoModal">
+        <div class="hd-modal hd-modal--sm">
+            <div class="hd-modal-hd">
+                <div class="hd-modal-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    About PromptBuilder
+                </div>
+                <button class="hd-modal-close" id="hdInfoClose">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="hd-modal-body">
+                <div class="hd-info-hero">
+                    <div class="hd-info-logo">PF</div>
+                    <div class="hd-info-name">PromptForge</div>
+                    <div class="hd-info-ver">Version 1.0.0</div>
+                </div>
+                <p class="hd-info-desc">PromptForge helps you build, save, and manage AI prompts for any model — Claude, ChatGPT, Gemini, and more. Craft perfect prompts with variables, file context, and smart templates.</p>
+                <div class="hd-info-stats">
+                    <div class="hd-info-stat">
+                        <div class="hd-info-stat-num">6+</div>
+                        <div class="hd-info-stat-lbl">AI Models</div>
+                    </div>
+                    <div class="hd-info-stat">
+                        <div class="hd-info-stat-num">50+</div>
+                        <div class="hd-info-stat-lbl">Templates</div>
+                    </div>
+                    <div class="hd-info-stat">
+                        <div class="hd-info-stat-num">∞</div>
+                        <div class="hd-info-stat-lbl">Prompts (Pro)</div>
+                    </div>
+                </div>
+                <div class="hd-info-links">
+                    <a href="help-support.html" class="hd-info-link">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        Help &amp; Support
+                    </a>
+                    <a href="upgrade-now.html" class="hd-info-link hd-info-link--pri">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg>
+                        Upgrade to Pro
+                    </a>
+                </div>
+                <div class="hd-info-copy">© 2025 PromptForge. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+    <!-- TOAST CONTAINER -->
+    <div class="toast-wrap" id="toasts"></div>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/templates.js"></script>
+</body>
+
+</html>
