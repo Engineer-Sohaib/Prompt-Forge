@@ -6765,6 +6765,7 @@ select,
   }
   .hd-actions{
     justify-content: space-between;
+    width: 100%;
   }
   .mob-menu-btn {
     display: flex;
